@@ -169,6 +169,8 @@ header h2 span{
 
 .navbar--links{
   color: var(--text3-color);
+  font-size: var(--fs-300);
+  position: relative;
 }
 
 .menu{
@@ -179,6 +181,35 @@ header h2 span{
 
 }
 
+
+
+
+.underline::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  border-bottom: 0.225em solid var(--text3-color);
+  transition: all 0.35s;
+}
+
+.underline--hire::after{
+  border-bottom: 0.225em solid  var(--maincolor);
+
+}
+
+.underline:hover::after {
+  transition: all 0.35s;
+}
+
+
+.underline::after {
+  right: 50%;
+  left: 50%;
+}
+.underline:hover::after {
+  right: 0;
+  left: 0;
+}
 
 .toggle {
   cursor: pointer;
@@ -346,8 +377,7 @@ i{
 }
 
 footer{
-  position: absolute;
-  bottom: 0;
+
   width: 100vw;
   height: 15rem;
   margin-top: 2rem;
@@ -384,7 +414,100 @@ footer div a img {
   font-size: var(--fs-300);
 }
 
-/* TENER IMAGENES DE DISTINTO TAMAÑO */
+
+@media(min-width: 2000px){
+  :root{
+    --fs-300: 2.8rem;
+    --fs-400:3.2rem;
+    --fs-600: 4.2rem;
+    --fs-800: 6.7rem;
+    
+  }
+
+  header{
+    height: 12rem;
+  }
+
+
+  i{
+    font-size: 3rem;
+  }
+
+
+  .home-bcilinder{
+    height: 52rem;
+  }
+
+  .home-scilinder{
+    height: 48rem;
+    right: 1.7vw;
+  }
+
+  .home-here-button{
+    width: 25rem;
+    height: 6rem;
+    border-radius: 1.4rem;
+  }
+
+  .logo, .footer--logo img{
+    width: 9rem;
+  }
+
+  footer{
+    position: absolute;
+    bottom: 0;
+  }
+
+  footer div a img{
+    width: 4rem;
+  }
+
+}
+
+@media(min-width: 1440px){
+  :root{
+    --fs-300: 1.3rem;
+    --fs-400:2.5rem;
+    --fs-600: 3.2rem;
+    --fs-800: 5.7rem;
+    
+  }
+
+  header{
+    height: 8rem;
+  }
+
+
+  i{
+    font-size: 2rem;
+  }
+
+
+  .home-bcilinder{
+    height: 35rem;
+  }
+
+  .home-scilinder{
+    height: 31rem;
+    right: 1.9vw;
+  }
+
+  .home-here-button{
+    width: 15rem;
+    height: 4rem;
+    border-radius: .6rem;
+  }
+
+  .logo, .footer--logo img{
+    width: 6.5rem;
+  }
+
+  footer div a img{
+    width: 3rem;
+  }
+
+
+}
 
 @media(max-width: 950px){
   :root{
@@ -401,14 +524,8 @@ footer div a img {
   }
   
   header div h2{
-    font-weight: var(--fs-400);
+    font-weight: var(--fw-400);
   }
-
-  .navbar--links{
-    font-size: var(--fs-300);
-  }
-
-
 
   .logo, .footer--logo{
     width: 4rem;
@@ -423,11 +540,6 @@ footer div a img {
     right: 4vw;
   }
 
-  .home-here-button{
-    font-size: var(--fs-300);
-    background-color: var(--text3-color);
-    color: var(--theme);
-  }
 }
 
 
@@ -459,8 +571,15 @@ footer div a img {
   }
 
   .home-here-button{
-        width: 11rem;
+    width: 11rem;
     height: 2.5rem;
+    background-color: var(--text3-color);
+    color: var(--theme);
+  }
+
+  .home-here-button:hover{
+    background-color: var(--maincolor);
+    color: black;
   }
 
   header h2{
@@ -474,9 +593,6 @@ footer div a img {
     text-shadow: -3px -3px var(--maincolor);
   }
 
-  .home--content h1{
-    font-size: var(--fs-600);
-  }
 
   .key-bracket{
     color: var(--text-color);
@@ -554,7 +670,8 @@ footer div a img {
   } 
 
   .menu > li > .navbar--links{
-    padding: 1rem;
+    
+    margin: 1rem;
   }
 
   .menu > li:nth-child(1){
