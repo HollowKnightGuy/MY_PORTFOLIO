@@ -755,15 +755,38 @@ footer div a img {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   /* ABOUT ME */
 
+  .body_aboutme{
+    margin: 0 20%;
+    position: relative;
+  }
   
 .container{
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 32rem;
-  width: 100vw;
+  width: 100%;
   /* background-color: red; */
   /* overflow-x: hidden; */
 }
@@ -891,6 +914,8 @@ footer div a img {
   opacity: 100%;
   animation: rellenar 1.5s forwards var(--animation-bar-delay);
   z-index: 1;
+  
+
 }
 
 
@@ -900,6 +925,7 @@ footer div a img {
   background-color: #2C96C4;
 
   animation: rellenar 1.5s forwards var(--animation-bar-delay);
+  
 
 }
 
@@ -907,6 +933,7 @@ footer div a img {
   --animation-bar-delay: 1.2s;
   --amount-filled: 79%;
   background-color: #cab301;
+  
 
   animation: rellenar 1.5s forwards var(--animation-bar-delay);
 
@@ -917,6 +944,7 @@ footer div a img {
   --amount-filled: 92%;
   background-color: #747ca0;
   animation: rellenar 1.5s forwards var(--animation-bar-delay);
+  
 
 }
 
@@ -926,9 +954,11 @@ footer div a img {
 background-color: #1261aa;
 
 
+
 animation: rellenar 1.5s forwards var(--animation-bar-delay);
 
 }
+
 
 @keyframes rellenar{
   0%{
