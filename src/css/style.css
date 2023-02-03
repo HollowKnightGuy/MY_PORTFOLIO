@@ -918,13 +918,16 @@ footer div a img {
 
 }
 
+.fillcont1{
+  animation-play-state: paused;
+}
 
 .fillcont2{
   --animation-bar-delay: .8s;
   --amount-filled: 86%;
   background-color: #2C96C4;
-
   animation: rellenar 1.5s forwards var(--animation-bar-delay);
+  animation-play-state: paused;
   
 
 }
@@ -933,9 +936,8 @@ footer div a img {
   --animation-bar-delay: 1.2s;
   --amount-filled: 79%;
   background-color: #cab301;
-  
-
   animation: rellenar 1.5s forwards var(--animation-bar-delay);
+  animation-play-state: paused;
 
 }
 
@@ -944,6 +946,8 @@ footer div a img {
   --amount-filled: 92%;
   background-color: #747ca0;
   animation: rellenar 1.5s forwards var(--animation-bar-delay);
+  animation-play-state: paused;
+
   
 
 }
@@ -952,10 +956,8 @@ footer div a img {
 --animation-bar-delay: 1.8s;
 --amount-filled: 75%;
 background-color: #1261aa;
-
-
-
 animation: rellenar 1.5s forwards var(--animation-bar-delay);
+animation-play-state: paused;
 
 }
 

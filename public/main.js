@@ -32,17 +32,21 @@ document.querySelector('.toggle')
   document.querySelector('.menu').classList.toggle('menu-column');
 });
 
-$(document).ready(function() {
-    if ($(window).scrollTop() > 20) {
-        $(".fill-container").css("animation-play-state", "running");//.fadeOut();
-      } else {
-        $(".fill-container").css("animation-play-state", "paused");//.fadeOut();
-    
-      }
+
+let done = false;
+$(document).on("scroll", function(){
+    if(!done){
+
+        if ($(document).scrollTop() > 700) {
+            console.log($(document).scrollTop());
+            for(let i = 1; i<6; i++)
+                $(".fillcont"+i).css("animation-play-state", "running");//.fadeOut();
+            }
+            let done = true
+    }
 
 })
-    
 
 
 
-// AOS.init();
+AOS.init();
