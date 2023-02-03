@@ -1,4 +1,4 @@
-AOS.init();
+
 
 const toggle = document.getElementById('toggleDark');
 const body = document.querySelector('body');
@@ -31,3 +31,6 @@ document.querySelector('.toggle')
   this.classList.toggle('activate');
   document.querySelector('.menu').classList.toggle('menu-column');
 });
+
+
+AOS.init();
