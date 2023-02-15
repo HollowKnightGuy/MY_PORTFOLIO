@@ -5,7 +5,7 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/about.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -16,26 +16,26 @@
   </head>
   <body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="../../public/main.js" defer></script>
+    <script src="../js/main.js" defer></script>
     <header>
         <div>
-          <a href="index.html">
-            <img src="../../images/logo_dark.png" alt="logo.png" class="logo">
+          <a href="../../index.html">
+            <img src="../images/logo_dark.png" alt="logo.png" class="logo">
           </a>
           <h2>My <span>Portfolio</span></h2>
         </div>
   
         <nav class="navbar">
           <ul class="menu">
-              <li>
-                <a class="navbar--links" href="../../index.html">HOME</a>
-              </li>
-              <li>
-                <a class="navbar--links" href="#">ABOUT ME</a>
-              </li>
-              <li>
-                <a class="navbar--links hire-me" href="hire.html">HIRE ME</a>
-              </li>
+            <li>
+              <a class="navbar--links underline" href="../../index.html">HOME</a>
+            </li>
+            <li>
+              <a class="navbar--links underline" href="src/html/about.html">ABOUT ME</a>
+            </li>
+            <li>
+              <a class="navbar--links hire-me underline underline--hire" href="src/html/hire.html">HIRE ME</a>
+            </li>
   
             <li>
               <i class="bi-brightness-high-fill" id="toggleDark"></i>
@@ -50,16 +50,27 @@
       </header>
   <div class="body_aboutme">
 
-    <section>
-        <h1 class="abouttitulo">About Me</h1>
-        <article>
+    <section class="about-section">
+      <div class="h1darkabout" data-aos="fade-right" data-aos-duration="1000" >
+        <h1 class="h1about h1about--right" >About Me</h1>
+      </div>
+      <div class="about">
+        <article data-aos="fade-up" data-aos-duration="1100">
             <div class="career">
-                <img src="../../images/libros.png" alt="stage.jpg" class="stage-img">
+              <div class="stage">
+                <img src="../images/libros.png" alt="stage.jpg" class="stage-img">
                 <span class="stage-description">Bachelor of Science graduate</span>
-                <img src="../../images/graduation_cap.png" alt="stage.jpg" class="stage-img">
+              </div>
+              <img src="../images/arrow.png" alt="arrow" class="arrow arrow1">
+              <div class="stage stage--left">
+                <img src="../images/graduation_cap.png" alt="stage.jpg" class="stage-img">
                 <span class="stage-description">Graduated in Web Application Development</span>
-                <img src="../../images/earth_picture.png" alt="stage.jpg" class="stage-img">
+              </div>
+              <img src="../images/arrow.png" alt="" class="arrow arrow2">
+              <div class="stage stage--bottom">
+                <img src="../images/earth_picture.png" alt="stage.jpg" class="stage-img">
                 <span class="stage-description">Work experience abroad</span>
+              </div>
             </div>
         </article>
         <article>
@@ -68,9 +79,12 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eligendi quibusdam totam minima quaerat, neque ipsa deleniti accusamus sed beatae reprehenderit est quam, architecto nihil sint a exercitationem. Sint, dicta.
             </div>
         </article>
+      </div>
     </section>
     <section>
-        <h1 class="abouttitulo">Skills</h1>
+      <div class="h1darkabout h1darkaboutskills" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">
+        <h1 class="h1about h1about--right">Skills</h1>
+      </div>
         <article>
             <h2>Main Abilities</h2>
             <div class="container">
@@ -82,7 +96,7 @@
                         <div class="wave"></div>
                         <div class="wave"></div>
                       </div>
-                      <img src="../../images/icons/languages_icons/html5.png" alt="programin_lang.png ">
+                      <img src="../images/icons/languages_icons/html5.png" alt="programin_lang.png ">
                 </div>
                 <div class="barra barra1" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="700">
                     <div class="fillcontainer fillcont2">
@@ -92,7 +106,7 @@
                         <div class="wave"></div>
                         <div class="wave"></div>
                       </div>
-                      <img src="../../images/icons/languages_icons/css.png" alt="programin_lang.png ">
+                      <img src="../images/icons/languages_icons/css.png" alt="programin_lang.png ">
                 </div>
                 <div class="barra barra2" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1000">
                     <div class="fillcontainer fillcont3">
@@ -102,7 +116,7 @@
                         <div class="wave"></div>
                         <div class="wave"></div>
                       </div>
-                      <img src="../../images/icons/languages_icons/js.png" alt="programin_lang.png ">
+                      <img src="../images/icons/languages_icons/js.png" alt="programin_lang.png ">
                 </div>
                 <div class="barra barra3" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1300">
                     <div class="fillcontainer fillcont4">
@@ -112,7 +126,7 @@
                         <div class="wave"></div>
                         <div class="wave"></div>
                       </div>
-                      <img src="../../images/icons/languages_icons/php.png" alt="programin_lang.png ">
+                      <img src="../images/icons/languages_icons/php.png" alt="programin_lang.png ">
                 </div>
                 <div class="barra barra4  " data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1600">
                     <div class="fillcontainer fillcont5">
@@ -122,7 +136,7 @@
                         <div class="wave"></div>
                         <div class="wave"></div>
                       </div>
-                      <img src="../../images/icons/languages_icons/python.png" alt="programin_lang.png ">
+                      <img src="../images/icons/languages_icons/python.png" alt="programin_lang.png ">
                 </div>
             </div>
         </article>
@@ -135,7 +149,11 @@
         </article>
     </section>
     <section>
-        <h1>Projects</h1>
+      <div class="h1darkabout h1darkaboutprojects" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000">
+        <h1 class="h1about h1about--left">Projects</h1>
+        
+      </div>
+
         <div class="projects-slider">
             <p></p>
             <img src="" alt="">
@@ -146,26 +164,26 @@
 
     <footer>
         <div class="footer--logo">
-          <img src="../../images/logo_dark.png" alt="logo.png">
+          <img src="../images/logo_dark.png" alt="logo.png">
         </div>
         <div class="footer--social-links">
           <a href="">
-            <img src="../../images/icons/wsp_icon_dark.png" alt="social.png">
+            <img src="../images/icons/wsp_icon_dark.png" alt="social.png">
           </a>
           <a href="">
-            <img src="../../images/icons/linkedin_icon_dark.png" alt="social.png">
+            <img src="../images/icons/linkedin_icon_dark.png" alt="social.png">
           </a>
           <a href="">
-            <img src="../../images/icons/git_icon_dark.png" alt="social.png" id="git-image">
+            <img src="../images/icons/git_icon_dark.png" alt="social.png" id="git-image">
           </a>
           <a href="">
-            <img src="../../images/icons/telegram_icon_dark.png" alt="social.png">
+            <img src="../images/icons/telegram_icon_dark.png" alt="social.png">
           </a>
           <a href="">
-            <img src="../../images/icons/ig_icon_dark.png" alt="social.png">
+            <img src="../images/icons/ig_icon_dark.png" alt="social.png">
           </a>
           <a href="">
-            <img src="../../images/icons/tw_icon_dark.png" alt="social.png">
+            <img src="../images/icons/tw_icon_dark.png" alt="social.png">
           </a>
         </div>
         <div class="copy">

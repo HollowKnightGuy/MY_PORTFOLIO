@@ -1,0 +1,285 @@
+/* ABOUT ME */
+
+@keyframes wave {
+	0% {
+		transform: translateX(50%);
+	}
+	50% {
+		transform: translateX(-50%);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}
+@keyframes waveheight {
+	0% {
+		top: 0rem;
+	}
+	50% {
+		top: -.3rem;
+	}
+	100% {
+		top: -.8rem;
+	}
+}
+@keyframes rellenar {
+	0% {
+		height: 0%;
+	}
+	100% {
+		height: var(--amount-filled);
+	}
+}
+
+
+// STYLES OF THE TITLES FROM ABOUT ME PAGE
+.h1darkabout {
+	width: 50vw;
+	background: radial-gradient(circle at left, var(--maincolor), var(--theme));
+	border-radius: 0 10% 10% 0;
+	box-shadow: inset -5rem 0 7rem .5rem var(--theme);
+}
+.h1about {
+	color: var(--text3-color);
+	font-size: var(--fs-800);
+	font-weight: var(--fw-800);
+	margin-left: 3rem;
+}
+.h1darkaboutskills {
+	width: 35vw;
+	float: right;
+	text-align: right;
+	background: radial-gradient(circle at right, var(--maincolor), var(--theme));
+	border-radius: 10% 0 0 10%;
+	box-shadow: inset -5rem 0 7rem .5rem var(--theme);
+}
+.h1about--right {
+	margin-right: 4rem;
+}
+.h1darkaboutprojects {
+	width: 44vw;
+}
+
+
+// STYLES OF PROGRESS BARS
+
+.barra {
+	position: relative;
+	display: flex;
+	align-items: flex-end;
+	width: 100px;
+	height: 300px;
+	background-color: #cf9e88;
+	border-radius: 5px;
+	opacity: 100%;
+	overflow: hidden;
+	img {
+		position: absolute;
+		left: 11%;
+		bottom: 32%;
+		width: 5rem;
+		z-index: 10;
+		border-radius: 4px;
+	}
+}
+
+.about{
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	width: 100vw;
+	margin-top: 5rem;
+}
+
+.career{
+	position: relative;
+	box-sizing: border-box;
+	margin: 0rem;
+	padding: 2rem;
+	width: 20vw;
+	height: 80vh;
+	display: flex;
+	flex-direction: column;
+	background: linear-gradient(to top, var(--seccolor-2),var(--seccolor-2), var(--theme));
+	border-radius: 10px;
+	transition: all 500ms;
+	color: white;
+	gap: 2rem;
+}
+
+.career:hover{
+	transition: all 500ms;
+	opacity: 80%;
+	background: var(--seccolor-2);
+	box-shadow: 0 0 20px 1px var(--seccolor);
+}
+
+.stage{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	width: 70%;
+	font-size: calc(var(--fs-300)* 1.1);
+}
+
+.stage--left{
+	margin-left: 4.6rem;
+}
+
+.stage--bottom{
+	gap: 1rem;
+	margin: 1rem 0 0 2.5rem;
+	flex-direction: row-reverse;
+}
+
+.career img{
+	width: 55%;
+}
+
+.arrow{
+	position: absolute;
+}
+
+.arrow1{
+	rotate: (-70deg);
+	scale: .5;
+	transform: scaleX(-1);
+	margin: 4% 0 0 33%;
+}
+
+.arrow2{
+	rotate: (60deg);
+	scale: .6;
+	margin-top: 70%;
+	left: 0px;
+}
+
+.barra1 {
+	background-color: #80c8e7;
+}
+.barra2 {
+	background-color: #d4c973;
+}
+.barra3 {
+	background-color: #a5add3;
+}
+.barra4 {
+	background-color: #6aa2d6;
+}
+
+
+
+.fillcontainer {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	border-radius: 0 0 5px 5px;
+	width: 100%;
+	background-color: #D3602A;
+	opacity: 100%;
+	animation: rellenar 1.5s forwards var(--animation-bar-delay);
+	z-index: 1;
+}
+.wave {
+	background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 88.7'%3E%3Cpath d='M800 56.9c-155.5 0-204.9-50-405.5-49.9-200 0-250 49.9-394.5 49.9v31.8h800v-.2-31.6z' fill='%23D3602A'/%3E%3C/svg%3E");
+	color: #04c4cc;
+	position: absolute;
+	width: 200%;
+	height: 9%;
+	margin-bottom: 1rem;
+	animation: wave 4s -3s linear infinite, waveheight 2.5s forwards;
+	transform: translate3d(0, 0, 0);
+	opacity: 0.8;
+	z-index: -1;
+	&:nth-of-type(2) {
+		animation: wave 7s -3s linear reverse infinite, waveheight 2.5s forwards;
+		opacity: 0.5;
+	}
+	&:nth-of-type(3) {
+		animation: wave 9s linear reverse infinite, waveheight 2.5s forwards;
+		opacity: 0.5;
+	}
+	&:nth-of-type(4) {
+		animation: wave 20s -1s linear infinite, waveheight 2.5s forwards;
+		opacity: 0.5;
+	}
+}
+.fillcont1 {
+	border-radius: 0 0 5px 5px;
+	width: 100%;
+	background-color: #D3602A;
+	opacity: 100%;
+	animation: rellenar 1.5s forwards var(--animation-bar-delay);
+	z-index: 1;
+	animation-play-state: paused;
+}
+.fillcont2 {
+	--animation-bar-delay: .8s;
+	--amount-filled: 86%;
+	background-color: #2C96C4;
+	animation: rellenar 1.5s forwards var(--animation-bar-delay);
+	animation-play-state: paused;
+}
+.fillcont3 {
+	--animation-bar-delay: 1.2s;
+	--amount-filled: 79%;
+	background-color: #cab301;
+	animation: rellenar 1.5s forwards var(--animation-bar-delay);
+	animation-play-state: paused;
+}
+.fillcont4 {
+	--animation-bar-delay: 1.5s;
+	--amount-filled: 92%;
+	background-color: #747ca0;
+	animation: rellenar 1.5s forwards var(--animation-bar-delay);
+	animation-play-state: paused;
+}
+.fillcont5 {
+	--animation-bar-delay: 1.8s;
+	--amount-filled: 75%;
+	background-color: #1261aa;
+	animation: rellenar 1.5s forwards var(--animation-bar-delay);
+	animation-play-state: paused;
+}
+
+.container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 32rem;
+	width: 100%;
+	>.barra {
+        /* IF WE ANT TO CHANGE THE SVG COLOR(WAVE EFFECT) WE HAVE TO EDIT THE "fill" ATTRIBUTE AND CHANGE THE CONTENT  AFTER "%23%"(MEANS "#") AND WRITE A HEX COLOR */
+		&:nth-child(2) {
+			>div {
+				>.wave {
+					background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 88.7'%3E%3Cpath d='M800 56.9c-155.5 0-204.9-50-405.5-49.9-200 0-250 49.9-394.5 49.9v31.8h800v-.2-31.6z' fill='%232C96C4'/%3E%3C/svg%3E");
+				}
+			}
+		}
+		&:nth-child(3) {
+			>div {
+				>.wave {
+					background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 88.7'%3E%3Cpath d='M800 56.9c-155.5 0-204.9-50-405.5-49.9-200 0-250 49.9-394.5 49.9v31.8h800v-.2-31.6z' fill='%23cab301'/%3E%3C/svg%3E");
+				}
+			}
+		}
+		&:nth-child(4) {
+			>div {
+				>.wave {
+					background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 88.7'%3E%3Cpath d='M800 56.9c-155.5 0-204.9-50-405.5-49.9-200 0-250 49.9-394.5 49.9v31.8h800v-.2-31.6z' fill='%23747ca0'/%3E%3C/svg%3E");
+				}
+			}
+		}
+		&:nth-child(5) {
+			>div {
+				>.wave {
+					background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 88.7'%3E%3Cpath d='M800 56.9c-155.5 0-204.9-50-405.5-49.9-200 0-250 49.9-394.5 49.9v31.8h800v-.2-31.6z' fill='%231261aa'/%3E%3C/svg%3E");
+				}
+			}
+		}
+	}
+}

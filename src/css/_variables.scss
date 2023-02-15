@@ -1,0 +1,48 @@
+:root {
+
+	
+	// DARK THEME VARIABLES
+	--dark-maincolor: #71E6E7;
+	--dark-text-color: #747072;
+	--dark-2text-color: rgb(0, 0, 0);
+	--dark-3text-color: #ffff;
+	--dark-seccolor: #E77371;
+	--dark-seccolor-2: #c97270;
+	--dark-neutralcolor: #04c4cc;
+	--dark-theme: #333032;
+	
+    // LIGHT THEME VARIABLES
+	--light-maincolor: #008EFF;
+	--light-text-color: #050A30;
+	--light-2text-color: #050A30;
+	--light-3text-color: #050A30;
+	--light-seccolor: #FF7100;
+	--light-seccolor-2: #FF7100;
+	--light-neutralcolor: #fd7e16;
+	--light-theme: #f1f1f3;
+	
+    // MAIN VARIABLES
+	--maincolor: var(--dark-maincolor);
+	--text-color: var(--dark-text-color);
+	--text2-color: var(--dark-2text-color);
+	--text3-color: var(--dark-3text-color);
+	--seccolor: var(--dark-seccolor);
+	--seccolor-2: var(--dark-seccolor-2);
+	--neutralcolor: var(--dark-neutralcolor);
+	--theme: var(--dark-theme);
+	--fs-300: 1rem;
+	--fs-400: 2rem;
+	--fs-600: 2.50rem;
+	--fs-800: 6rem;
+	--fs-1000: 7.5rem;
+	--ff: 'Be Vietnam Pro', sans-serif;
+	--fw-300: 500;
+	--fw-400: 500;
+	--fw-600: 600;
+	--fw-800: 600;
+	
+	
+	// ABOUT ME
+	--animation-bar-delay: .5s;
+	--amount-filled: 80%;
+}

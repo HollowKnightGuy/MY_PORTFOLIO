@@ -1,0 +1,217 @@
+
+.home-scilinder {
+	background-color: var(--maincolor);
+	opacity: 100%;
+	position: relative;
+	border-radius: 500px;
+	top: 2rem;
+	height: 26rem;
+	right: 2.6vw;
+	display: grid;
+	grid-template-columns: 1fr 1.4fr;
+	font-weight: var(--fw-800);
+	background-color: var(--maincolor);
+	opacity: 100%;
+	position: relative;
+	border-radius: 500px;
+	top: 2rem;
+	height: 26rem;
+	right: 2.6vw;
+	display: grid;
+	grid-template-columns: 1fr 1.4fr;
+	font-weight: var(--fw-800);
+}
+.text-theme {
+	position: absolute;
+	top: 2.5rem;
+	width: 6.5rem;
+	color: white;
+	right: -1.3rem;
+	font-size: var(--fs-300);
+}
+.home-bcilinder {
+	text-align: left;
+	position: relative;
+	background-color: var(--seccolor);
+	height: 30rem;
+	border-radius: 500px;
+	right: 30vw;
+}
+.home--content {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	h1 {
+		font-size: var(--fs-600);
+		color: var(--text2-color);
+		width: 75%;
+	}
+}
+.home-description {
+	font-size: var(--fs-300);
+	color: var(--text-color);
+}
+.home-here-button {
+	padding:1rem 5rem;
+	color: black;
+	background-color: white;
+	text-transform: uppercase;
+	border-radius: .5rem;
+	font-size: var(--fs-300);
+	font-weight: var(--fw-800);
+	border: 0;
+	cursor: pointer;
+	transition: all 400ms;
+	&:hover {
+		background-color: black;
+		color: white;
+		transition: all 400ms;
+	}
+}
+@media (min-width: 2000px) {
+
+	
+	.home-bcilinder {
+		height: 52rem;
+	}
+	.home-scilinder {
+		height: 48rem;
+		right: 1.7vw;
+	}
+	.home-here-button {
+		position: relative;
+		bottom:.6rem;
+		padding:2rem 10rem;
+		border-radius: 1.4rem;
+	}
+	
+
+}
+@media (min-width: 1440px) {
+
+	.home-bcilinder {
+		height: 35rem;
+	}
+	.home-scilinder {
+		height: 31rem;
+		right: 1.9vw;
+	}
+	.home-here-button {
+		padding:1.1rem 10rem;
+		border-radius: .6rem;
+	}
+
+	
+}
+@media (max-width: 950px) {
+
+	.home-bcilinder {
+		right: 27vw;
+		width: 110vw;
+		right: 33vw;
+	}
+
+	
+	.home-scilinder {
+		right: 4vw;
+	}
+}
+@media (max-width: 675px) {
+
+	.home-bcilinder {
+		background: transparent;
+	}
+	.home-scilinder {
+		background-color: transparent;
+	}
+	.home-description {
+		color: var(--text3-color);
+	}
+	.home--content {
+		h1 {
+			color: var(--text3-color);
+		}
+	}
+	.home-here-button {
+		border-radius: 4px;
+		padding: .7rem 4rem;
+		background-color: var(--text3-color);
+		color: var(--theme);
+		&:hover {
+			background-color: var(--maincolor);
+			color: black;
+		}
+	}
+
+	.letter-p {
+		color: var(--seccolor);
+		text-shadow: -3px -3px var(--maincolor);
+	}
+	.key-bracket {
+		color: var(--text-color);
+	}
+	.rectangles-decoration {
+		position: relative;
+		bottom: 37rem;
+		z-index: -5;
+	}
+	.rectangle {
+		position: absolute;
+		width: 160px;
+		height: 260px;
+		background-color: white;
+		border-radius: 6px;
+		z-index: -10;
+		opacity: 40%;
+		overflow-x: hidden;
+	}
+	.rectangle1 {
+		top: 10rem;
+		right: -5rem;
+		background-color: var(--maincolor);
+	}
+	.rectangle2 {
+		top: 14rem;
+		right: 3rem;
+		background-color: var(--seccolor);
+		z-index: -5;
+	}
+	.rectangle3 {
+		top: 21rem;
+		right: -0.5rem;
+		background-color: var(--maincolor);
+	}
+}
+@media (max-width: 560px) {
+
+
+	.home-scilinder {
+		grid-template-columns: 1fr 1.9fr;
+		right: -9vw;
+	}
+	.home--content {
+		width: 100%;
+	}
+	.home-description {
+		margin-top: .5rem;
+	}
+	.home-here-button {
+		margin-top: .6rem;
+		padding: .4rem 3rem;
+		font-size: var(--fs-300);
+		
+	}
+	.letter-p {
+		text-shadow: -2px -2px var(--maincolor);
+	}
+
+}
+@media (max-width: 320px) {
+	.home--content {
+		width: 70vw;
+	}
+	.home-here-button {
+		width: 100px;
+		height: 30px;
+	}
+}

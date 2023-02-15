@@ -1,0 +1,267 @@
+header {
+	display: grid;
+	grid-template-columns: 2fr 3.3fr;
+	position: relative;
+	align-items: center;
+	height: 6rem;
+	width: 100%;
+	margin-bottom: 1rem;
+	a {
+		display: inline-block;
+		padding: 0;
+	}
+	div {
+		display: flex;
+		align-items: center;
+	}
+	h2 {
+		color: white;
+		display: inline-block;
+		font-size: var(--fs-400);
+		font-weight: var(--fw-600);
+		color: var(--text3-color);
+		margin-left: 1rem;
+		span {
+			color: var(--maincolor);
+		}
+	}
+}
+.logo {
+	width: 5rem;
+}
+.navbar {
+	position: relative;
+	height: 100%;
+	margin-right: 3rem;
+}
+.navbar--links {
+	color: var(--text3-color);
+	font-size: var(--fs-300);
+	position: relative;
+}
+.menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+}
+.underline {
+	&::after {
+		content: '';
+		position: absolute;
+		top: 100%;
+		border-bottom: 0.225em solid var(--text3-color);
+		transition: all 0.35s;
+		right: 50%;
+		left: 50%;
+	}
+	&:hover {
+		&::after {
+			transition: all 0.35s;
+			right: 0;
+			left: 0;
+		}
+	}
+}
+.underline--hire {
+	&::after {
+		border-bottom: 0.225em solid var(--maincolor);
+	}
+}
+.toggle {
+	cursor: pointer;
+	overflow: hidden;
+	width: 40px;
+	height: 40px;
+	position: relative;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	right: 1rem;
+	.linea-toggle {
+		&:nth-child(2) {
+			transition-delay: .12s;
+		}
+	}
+}
+.linea-toggle {
+	position: absolute;
+	display: block;
+	width: 30px;
+	height: 2px;
+	background: var(--maincolor);
+	border-radius: 5px;
+	transition: all .6s;
+	&:first-child {
+		transform: translateY(-10px) translateX(-5px);
+		transition-delay: 0s;
+	}
+	&:last-child {
+		transform: translateY(10px) translateX(-5px);
+		transition-delay: 0s;
+	}
+}
+.toggle.activate {
+	.linea-toggle {
+		&:first-child {
+			transform: translateY(0) translateX(0) rotate(45deg);
+			width: 36px;
+			height: 3px;
+			transition-delay: .1s;
+		}
+		&:nth-child(2) {
+			transform: translateX(110px);
+			transition-delay: 0s;
+		}
+		&:last-child {
+			transform: translateY(0) translateX(0) rotate(314deg);
+			width: 36px;
+			height: 3px;
+			transition-delay: .1s;
+		}
+	}
+}
+.bi-brightness-high-fill {
+	transition: all 600ms;
+	color: white;
+	padding: 8px;
+	border-radius: 7px;
+	&:hover {
+		background-color: rgb(75, 74, 74);
+		transition: all 200ms;
+	}
+}
+.bi-moon {
+	transition: all 600ms;
+	color: white;
+	padding: 8px;
+	border-radius: 7px;
+	color: black;
+	&:hover {
+		background-color: rgb(226, 223, 223);
+		transition: all 200ms;
+	}
+}
+i {
+	display: flex;
+	align-items: center;
+	font-size: 1.7rem;
+	cursor: pointer;
+	transition: all 600ms;
+}
+.hire-me {
+	color: var(--maincolor);
+}
+
+
+@media (min-width: 2000px) {
+	header {
+		height: 12rem;
+	}
+	i {
+		font-size: 3rem;
+	}
+	.logo {
+		width: 9rem;
+	}
+
+}
+
+
+@media (min-width: 1440px) {
+	header {
+		height: 8rem;
+	}
+	i {
+		font-size: 2rem;
+	}
+	.logo {
+		width: 6.5rem;
+	}
+}
+
+
+@media (max-width: 950px) {
+	header {
+		div {
+			h2 {
+				font-weight: var(--fw-400);
+			}
+		}
+	}
+
+	
+	.logo {
+		width: 4rem;
+	}
+}
+
+
+@media (max-width: 675px) {
+
+	header {
+		h2 {
+			display: none;
+			color: var(--text3-color);
+		}
+	}
+
+}
+
+@media (max-width: 560px) {
+	.toggle {
+		display: flex;
+		z-index: 15;
+	}
+	.menu {
+		display: none;
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		bottom: 6rem;
+		width: 100vw;
+		height: 15rem;
+		background-color: var(--theme);
+		padding: 0;
+		align-items: center;
+		z-index: 10;
+		transition: all 300ms;
+		>li {
+			>.navbar--links {
+				margin: 1rem;
+			}
+			&:nth-child(1) {
+				padding-top: 1.5rem;
+			}
+			&:last-child {
+				padding-bottom: 1.5rem;
+			}
+		}
+	}
+	.menu-column {
+		bottom: -9rem;
+		transition: all 300ms;
+	}
+
+	.logo {
+		padding: 10px;
+		padding-left: 1.5rem;
+		width: 80px;
+	}
+	.navbar {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: end;
+	}
+	.menu_desplegable {
+		display: block;
+		background-color: transparent;
+		border: none;
+		cursor: pointer;
+	}
+	header {
+		grid-template-columns: 2fr 1.2fr;
+	}
+}
