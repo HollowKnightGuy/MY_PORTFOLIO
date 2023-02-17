@@ -53,7 +53,7 @@ node_modules/
 
 public/
 
-.parcel-cache
+.parcel-cache/
 
 # Yarn Integrity file
 .yarn-integrity
