@@ -83,15 +83,14 @@
 	}
 }
 
-.about{
+.about {
 	display: flex;
 	flex-direction: row;
 	position: relative;
 	width: 100vw;
 	margin-top: 5rem;
 }
-
-.career{
+.career {
 	position: relative;
 	box-sizing: border-box;
 	margin: 0rem;
@@ -105,16 +104,17 @@
 	transition: all 500ms;
 	color: white;
 	gap: 2rem;
+	&:hover {
+		transition: all 500ms;
+		opacity: 80%;
+		background: var(--seccolor-2);
+		box-shadow: 0 0 20px 1px var(--seccolor);
+	}
+	img {
+		width: 55%;
+	}
 }
-
-.career:hover{
-	transition: all 500ms;
-	opacity: 80%;
-	background: var(--seccolor-2);
-	box-shadow: 0 0 20px 1px var(--seccolor);
-}
-
-.stage{
+.stage {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -122,38 +122,30 @@
 	width: 70%;
 	font-size: calc(var(--fs-300)* 1.1);
 }
-
-.stage--left{
+.stage--left {
 	margin-left: 4.6rem;
 }
-
-.stage--bottom{
+.stage--bottom {
 	gap: 1rem;
 	margin: 1rem 0 0 2.5rem;
 	flex-direction: row-reverse;
 }
-
-.career img{
-	width: 55%;
-}
-
-.arrow{
+.arrow {
 	position: absolute;
 }
-
-.arrow1{
+.arrow1 {
 	rotate: (-70deg);
 	scale: .5;
 	transform: scaleX(-1);
 	margin: 4% 0 0 33%;
 }
-
-.arrow2{
+.arrow2 {
 	rotate: (60deg);
 	scale: .6;
 	margin-top: 70%;
 	left: 0px;
 }
+
 
 .barra1 {
 	background-color: #80c8e7;
