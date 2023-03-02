@@ -16,6 +16,7 @@ html {
 	min-height: 100%;
 	position: relative;
 	overflow-x: hidden;
+	scroll-behavior: smooth;
 	&:focus-within {
 		scroll-behavior: smooth;
 	}

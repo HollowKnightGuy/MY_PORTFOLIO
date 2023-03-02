@@ -60,6 +60,7 @@ html {
   min-height: 100%;
   position: relative;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 html:focus-within {
   scroll-behavior: smooth;
@@ -400,6 +401,17 @@ i {
   }
 }
 /* ABOUT ME */
+@-webkit-keyframes wave {
+  0% {
+    transform: translateX(50%);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 @keyframes wave {
   0% {
     transform: translateX(50%);
@@ -411,6 +423,17 @@ i {
     transform: translateX(-100%);
   }
 }
+@-webkit-keyframes waveheight {
+  0% {
+    top: 0rem;
+  }
+  50% {
+    top: -0.3rem;
+  }
+  100% {
+    top: -0.8rem;
+  }
+}
 @keyframes waveheight {
   0% {
     top: 0rem;
@@ -420,6 +443,14 @@ i {
   }
   100% {
     top: -0.8rem;
+  }
+}
+@-webkit-keyframes rellenar {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: var(--amount-filled);
   }
 }
 @keyframes rellenar {
@@ -453,11 +484,107 @@ i {
   box-shadow: inset -5rem 0 7rem 0.5rem var(--theme);
 }
 
+.skills-article {
+  position: relative;
+  margin-top: 6rem;
+  top: 3rem;
+}
+
 .h1about--right {
   margin-right: 4rem;
 }
 
+.h2about {
+  color: var(--text3-color) !important;
+  font-weight: var(--fw-600);
+  margin: 5%;
+  font-size: var(--fs-600);
+  position: absolute;
+}
+
+.h2languages {
+  position: relative;
+  text-align: right;
+}
+
+.languageskills {
+  width: 70%;
+  margin: auto;
+}
+
+.h3languages {
+  color: var(--text3-color) !important;
+  font-weight: var(--fw-600);
+  margin: 4%;
+  margin-left: 13%;
+}
+
+.english-level, .spanish-level {
+  background: linear-gradient(to left, var(--seccolor), var(--maincolor));
+  margin: auto;
+  width: 80%;
+  height: 3rem;
+  border-radius: 5px;
+}
+
+.english-fill, .spanish-fill {
+  width: 0;
+  height: 100%;
+  border-radius: 5px;
+  background-color: var(--maincolor);
+}
+
+.english-fill {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+  -webkit-animation: fillenglishlevel 2s forwards;
+          animation: fillenglishlevel 2s forwards;
+}
+
+.spanish-fill {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+  -webkit-animation: fillspanishlevel 2s forwards;
+          animation: fillspanishlevel 2s forwards;
+}
+
+@-webkit-keyframes fillenglishlevel {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 77%;
+    opacity: 1;
+  }
+}
+
+@keyframes fillenglishlevel {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 77%;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fillspanishlevel {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes fillspanishlevel {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
 .h1darkaboutprojects {
+  margin-top: 7rem;
   width: 44vw;
   padding-bottom: 0.2rem;
 }
@@ -594,7 +721,8 @@ i {
   width: 100%;
   background-color: #D3602A;
   opacity: 100%;
-  animation: rellenar 1.5s forwards var(--animation-bar-delay);
+  -webkit-animation: rellenar 1.5s forwards var(--animation-bar-delay);
+          animation: rellenar 1.5s forwards var(--animation-bar-delay);
   z-index: 1;
 }
 
@@ -605,7 +733,8 @@ i {
   width: 200%;
   height: 9%;
   margin-bottom: 1rem;
-  animation: wave 4s -3s linear infinite, waveheight 2.5s forwards;
+  -webkit-animation: wave 4s -3s linear infinite, waveheight 2.5s forwards;
+          animation: wave 4s -3s linear infinite, waveheight 2.5s forwards;
   transform: translate3d(0, 0, 0);
   opacity: 0.8;
   z-index: -1;
@@ -619,7 +748,8 @@ i {
   opacity: 0.5;
 }
 .wave:nth-of-type(4) {
-  animation: wave 20s -1s linear infinite, waveheight 2.5s forwards;
+  -webkit-animation: wave 20s -1s linear infinite, waveheight 2.5s forwards;
+          animation: wave 20s -1s linear infinite, waveheight 2.5s forwards;
   opacity: 0.5;
 }
 
@@ -628,41 +758,51 @@ i {
   width: 100%;
   background-color: #D3602A;
   opacity: 100%;
-  animation: rellenar 1.5s forwards var(--animation-bar-delay);
+  -webkit-animation: rellenar 1.5s forwards var(--animation-bar-delay);
+          animation: rellenar 1.5s forwards var(--animation-bar-delay);
   z-index: 1;
-  animation-play-state: paused;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
 }
 
 .fillcont2 {
   --animation-bar-delay: .8s;
   --amount-filled: 86%;
   background-color: #2C96C4;
-  animation: rellenar 1.5s forwards var(--animation-bar-delay);
-  animation-play-state: paused;
+  -webkit-animation: rellenar 1.5s forwards var(--animation-bar-delay);
+          animation: rellenar 1.5s forwards var(--animation-bar-delay);
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
 }
 
 .fillcont3 {
   --animation-bar-delay: 1.2s;
   --amount-filled: 79%;
   background-color: #cab301;
-  animation: rellenar 1.5s forwards var(--animation-bar-delay);
-  animation-play-state: paused;
+  -webkit-animation: rellenar 1.5s forwards var(--animation-bar-delay);
+          animation: rellenar 1.5s forwards var(--animation-bar-delay);
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
 }
 
 .fillcont4 {
   --animation-bar-delay: 1.5s;
   --amount-filled: 92%;
   background-color: #747ca0;
-  animation: rellenar 1.5s forwards var(--animation-bar-delay);
-  animation-play-state: paused;
+  -webkit-animation: rellenar 1.5s forwards var(--animation-bar-delay);
+          animation: rellenar 1.5s forwards var(--animation-bar-delay);
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
 }
 
 .fillcont5 {
   --animation-bar-delay: 1.8s;
   --amount-filled: 75%;
   background-color: #1261aa;
-  animation: rellenar 1.5s forwards var(--animation-bar-delay);
-  animation-play-state: paused;
+  -webkit-animation: rellenar 1.5s forwards var(--animation-bar-delay);
+          animation: rellenar 1.5s forwards var(--animation-bar-delay);
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
 }
 
 .container {
@@ -702,13 +842,10 @@ i {
   transition: all 200ms;
 }
 
-.projectGit {
-  overflow: hidden;
-}
 .projectGit:hover img {
   box-sizing: border-box;
   transition: all 200ms;
-  transform: scale(1.03);
+  transform: scale(1.01);
 }
 
 footer {

@@ -32,19 +32,22 @@ document.querySelector('.toggle').addEventListener('click', function() {
 });
 
 // CONTROL WHEN THE ANIMATION OF THE BARS STARTS TO OCCUR IN ABOUT ME
-let done = false;
+
 $(document).on("scroll", function(){
-    if(!done){
-
-        if ($(document).scrollTop() > 400) {
-            console.log($(document).scrollTop());
-            for(let i = 1; i<6; i++)
-                $(".fillcont"+i).css("animation-play-state", "running");//.fadeOut();
-            }
-            let done = true
+    if ($(document).scrollTop() > 700) {
+        for(let i = 1; i < 6; i++){
+            $(".fillcont"+i).css("animation-play-state", "running");//.fadeOut();
+        }
     }
+    if ($(document).scrollTop() > 1400) {
+        console.log($(document).scrollTop());
+        for(let j = 1; j < 3; j++){
+            console.log(  $(".lang-bars"+j));
+            $(".lang-bars"+j).css("animation-play-state", "running");
+        }
+    }
+});
 
-})
 
 
 

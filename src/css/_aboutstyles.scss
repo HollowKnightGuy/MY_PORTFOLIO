@@ -53,10 +53,95 @@
 	border-radius: 10% 0 0 10%;
 	box-shadow: inset -5rem 0 7rem .5rem var(--theme);
 }
+
+.skills-article{
+	position: relative;
+	margin-top: 6rem;
+	top: 3rem;
+}
+
 .h1about--right {
 	margin-right: 4rem;
 }
+
+
+.h2about{
+	color: var(--text3-color) !important;
+	font-weight: var(--fw-600);
+	margin: 5%;
+	font-size: var(--fs-600);
+	position: absolute;
+}
+
+
+.h2languages{
+	position: relative;
+	text-align: right;
+}
+
+.languageskills{
+	width: 70%;
+	margin: auto;
+
+}
+
+.h3languages{
+	color: var(--text3-color) !important;
+	font-weight: var(--fw-600);
+	margin: 4%;
+	margin-left: 13%;
+}
+
+.english-level, .spanish-level{
+	background: linear-gradient(to left, var(--seccolor), var(--maincolor));
+	margin: auto;
+	width: 80%;
+	height: 3rem;
+	border-radius: 5px;
+}
+
+.english-fill, .spanish-fill{
+	width: 0;
+	height: 100%;
+	border-radius: 5px;
+	background-color: var(--maincolor);
+	
+}
+
+.english-fill{
+	animation-play-state: paused;
+	animation: fillenglishlevel 2s forwards;
+}
+
+.spanish-fill{
+	animation-play-state: paused;
+	animation: fillspanishlevel 2s forwards;
+}
+
+@keyframes fillenglishlevel{
+	0%{
+		width: 0%;
+	}
+	100%{
+		width: 77%;
+		opacity: 1;
+	}
+}
+
+
+@keyframes fillspanishlevel{
+	0%{
+		width: 0%;
+	}
+	100%{
+		width: 100%;
+	}
+}
+
+
+
 .h1darkaboutprojects {
+	margin-top: 7rem;
 	width: 44vw;
 	padding-bottom: .2rem;
 }
@@ -313,11 +398,11 @@
 }
 
 .projectGit{
-	overflow:hidden;
 	&:hover img{
 		box-sizing: border-box;
 		transition: all 200ms;
-		-webkit-transform:scale(1.03);transform:scale(1.03);
+		-webkit-transform:scale(1.01);transform:scale(1.01);
 	}
 }
+
 

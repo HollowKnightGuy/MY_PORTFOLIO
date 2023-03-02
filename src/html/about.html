@@ -92,8 +92,8 @@
       <div class="h1darkabout h1darkaboutskills" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">
         <h1 class="h1about h1about--right">Skills</h1>
       </div>
-        <article>
-            <h2>Main Abilities</h2>
+        <article class="skills-article">
+            <h2 class="h2about">Main Abilities</h2>
             <div class="container">
                 <div class="barra" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
                     <div class="fillcontainer fillcont1" >
@@ -148,41 +148,60 @@
             </div>
         </article>
         <article>
-            <h2>Languages</h2>
-            <h3>English</h3>
-            <div class="english-level"></div>
-            <h3>Spanish</h3>
-            <div class="english-level"></div>
+            <h2 class="h2about h2languages">Languages</h2>
+            <div class="languageskills" >
+              <h3 class="h3languages" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">English</h3>
+              <div id="english-level" class="lang-bars1 english-level" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
+                <div class="english-fill"></div>
+              </div>
+              <h3 class="h3languages" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">Spanish</h3>
+              <div id="spanish-level" class="lang-bars2 spanish-level" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
+                <div class="spanish-fill"></div>
+              </div>
+            </div>
         </article>
     </section>
     <section>
-      <div class="h1darkabout h1darkaboutprojects" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000">
+      <div class="h1darkabout h1darkaboutprojects" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
         <h1 class="h1about h1about--left">Projects</h1>
         
       </div>
       <div class="carousel-container" style="height: 100%;">
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up" data-aos-duration="500">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up" data-aos-duration="500" data-aos-delay="700">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <a href="https://github.com/HollowKnightGuy/PROYECTO_SENDERISMO_PHP" target="_blank" class="projectGit">
                 <picture>
-                  <source type="image/png"  media="(max-width: 2000px)" srcset="../images/senderismo-iconorigin40per.png" class="aether"/>
-                  <source type="image/png"  media="(max-width: 1200px)" srcset="../images/senderismo-iconorigin20per.png" class="aether"/>
-                  <source type="image/png"  media="(max-width: 500px)" srcset="../images/senderismo-iconorigin10per.png" class="aether"/>
-                  <img src="../images/senderismo-iconorigin20per.png" class="mt-1 mb-3 mx-auto" alt="...">
+                  <source type="image/png"  media="(min-width: 2000px)" srcset="../images/senderismo-iconorigin40per.png"/>
+                  <source type="image/png"  media="(min-width: 1200px)" srcset="../images/senderismo-iconorigin30per.png"/>
+                  <source type="image/png"  media="(min-width: 500px)" srcset="../images/senderismo-iconorigin20per.png"/>
+                  <source type="image/png"  media="(min-width: 200px)" srcset="../images/senderismo-iconorigin10per.png"/>
+                  <img src="../images/senderismo-iconorigin20per.png" class="mx-auto" alt="...">
                 </picture>
               </a>
 
             </div>
             <div class="carousel-item">
               <a href="https://github.com/HollowKnightGuy/ARTIC_SHOP" target="_blank" class="projectGit">
-                <img src="../images/icons/Atic_ico20per.png" style="border-radius: 300px;" class="m-auto" alt="...">
+                <picture>
+                  <source type="image/png"  media="(min-width: 2000px)" srcset="../images/artic-icon-origin40per.png"/>
+                  <source type="image/png"  media="(min-width: 1200px)" srcset="../images/artic-icon-origin30per.png"/>
+                  <source type="image/png"  media="(min-width: 500px)" srcset="../images/artic-icon-origin20per.png"/>
+                  <source type="image/png"  media="(min-width: 200px)" srcset="../images/artic-icon-origin10per.png"/>
+                  <img src="../images/artic-icon-origin20per.png" class="mx-auto"  style="border-radius:50% ;"   alt="...">
+                </picture>
               </a>
 
             </div>
             <div class="carousel-item">
               <a href="https://github.com/HollowKnightGuy/ROCK_PAPER_SCISSORS_LIZARD_SPOCK" target="_blank" class="projectGit">
-                <img src="../images/rps-iconorigin20per.png" class="m-auto" alt="...">
+                <picture>
+                  <source type="image/png"  media="(min-width: 2000px)" srcset="../images/rps-iconorigin40per.png"/>
+                  <source type="image/png"  media="(min-width: 1200px)" srcset="../images/rps-iconorigin30per.png"/>
+                  <source type="image/png"  media="(min-width: 500px)" srcset="../images/rps-iconorigin20per.png"/>
+                  <source type="image/png"  media="(min-width: 200px)" srcset="../images/rps-iconorigin10per.png"/>
+                  <img src="../images/rps-iconorigin20per.png" class="mx-auto" alt="...">
+                </picture>
               </a>
 
             </div>
