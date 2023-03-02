@@ -60,6 +60,11 @@
 	width: 44vw;
 }
 
+.lighttitle{
+	background: transparent;
+
+}
+
 
 // STYLES OF PROGRESS BARS
 
@@ -83,27 +88,28 @@
 	}
 }
 
-.about {
+.about{
 	display: flex;
 	flex-direction: row;
 	position: relative;
+	justify-content: space-around;
 	width: 100vw;
 	margin-top: 5rem;
 }
-.career {
+.career, .about--description {
 	position: relative;
 	box-sizing: border-box;
-	margin: 0rem;
 	padding: 2rem;
-	width: 20vw;
+	width: 18vw;
 	height: 80vh;
 	display: flex;
 	flex-direction: column;
+	justify-content: space-around;
 	background: linear-gradient(to top, var(--seccolor-2),var(--seccolor-2), var(--theme));
 	border-radius: 10px;
 	transition: all 500ms;
-	color: white;
-	gap: 2rem;
+	color: var(--text3-color);
+	font-weight: var(--fw-400);
 	&:hover {
 		transition: all 500ms;
 		opacity: 80%;
@@ -116,20 +122,32 @@
 }
 .stage {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	align-items: center;
 	text-align: center;
+	gap: 1rem;
 	width: 70%;
-	font-size: calc(var(--fs-300)* 1.1);
+	font-size: var(--fs-300);
 }
 .stage--left {
 	margin-left: 4.6rem;
-}
-.stage--bottom {
-	gap: 1rem;
-	margin: 1rem 0 0 2.5rem;
 	flex-direction: row-reverse;
 }
+
+.about--description{
+	font-size: var(--fs-300);
+	color: var(--text3-color);
+	width: 600px;
+	height: 660px;
+	background: linear-gradient(to bottom, var(--neutralcolor-2),var(--neutralcolor-2), var(--theme));
+	&:hover {
+		transition: all 500ms;
+		opacity: 80%;
+		background: var(--neutralcolor-2);
+		box-shadow: 0 0 20px 1px var(--neutralcolor-2);
+	}
+}
+
 .arrow {
 	position: absolute;
 }
@@ -275,3 +293,5 @@
 		}
 	}
 }
+
+

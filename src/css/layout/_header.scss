@@ -29,17 +29,17 @@ header {
 .logo {
 	width: 5rem;
 }
-.navbar {
+.navbar-mine {
 	position: relative;
 	height: 100%;
 	margin-right: 3rem;
 }
-.navbar--links {
-	color: var(--text3-color);
+.navbar--links-mine {
+	color: var(--text3-color) !important;
 	font-size: var(--fs-300);
 	position: relative;
 }
-.menu {
+.menu-mine {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -150,7 +150,7 @@ i {
 	transition: all 600ms;
 }
 .hire-me {
-	color: var(--maincolor);
+	color: var(--maincolor) !important;
 }
 
 

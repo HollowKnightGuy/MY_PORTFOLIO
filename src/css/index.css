@@ -1,11 +1,12 @@
 :root {
-  --dark-maincolor: #71E6E7;
+  --dark-maincolor: #71E6E7 ;
   --dark-text-color: #747072;
   --dark-2text-color: rgb(0, 0, 0);
   --dark-3text-color: #ffff;
   --dark-seccolor: #E77371;
   --dark-seccolor-2: #c97270;
   --dark-neutralcolor: #04c4cc;
+  --dark-neutralcolor-2: #609C9C;
   --dark-theme: #333032;
   --light-maincolor: #008EFF;
   --light-text-color: #050A30;
@@ -14,6 +15,7 @@
   --light-seccolor: #FF7100;
   --light-seccolor-2: #FF7100;
   --light-neutralcolor: #fd7e16;
+  --light-neutralcolor-2: #008EFF;
   --light-theme: #f1f1f3;
   --maincolor: var(--dark-maincolor);
   --text-color: var(--dark-text-color);
@@ -22,6 +24,7 @@
   --seccolor: var(--dark-seccolor);
   --seccolor-2: var(--dark-seccolor-2);
   --neutralcolor: var(--dark-neutralcolor);
+  --neutralcolor-2: var(--dark-neutralcolor-2);
   --theme: var(--dark-theme);
   --fs-300: 1rem;
   --fs-400: 2rem;
@@ -63,8 +66,8 @@ html:focus-within {
 }
 
 a {
-  text-decoration: none;
-  color: white;
+  text-decoration: none !important;
+  color: white !important;
 }
 
 body {
@@ -183,19 +186,19 @@ header h2 span {
   width: 5rem;
 }
 
-.navbar {
+.navbar-mine {
   position: relative;
   height: 100%;
   margin-right: 3rem;
 }
 
-.navbar--links {
-  color: var(--text3-color);
+.navbar--links-mine {
+  color: var(--text3-color) !important;
   font-size: var(--fs-300);
   position: relative;
 }
 
-.menu {
+.menu-mine {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -303,7 +306,7 @@ i {
 }
 
 .hire-me {
-  color: var(--maincolor);
+  color: var(--maincolor) !important;
 }
 
 @media (min-width: 2000px) {
@@ -455,7 +458,7 @@ i {
 
 .home-here-button {
   padding: 1rem 5rem;
-  color: black;
+  color: black !important;
   background-color: white;
   text-transform: uppercase;
   border-radius: 0.5rem;
@@ -467,7 +470,7 @@ i {
 }
 .home-here-button:hover {
   background-color: black;
-  color: white;
+  color: white !important;
   transition: all 400ms;
 }
 

@@ -53,7 +53,7 @@
 }
 .home-here-button {
 	padding:1rem 5rem;
-	color: black;
+	color: black !important;
 	background-color: white;
 	text-transform: uppercase;
 	border-radius: .5rem;
@@ -64,7 +64,7 @@
 	transition: all 400ms;
 	&:hover {
 		background-color: black;
-		color: white;
+		color: white !important;
 		transition: all 400ms;
 	}
 }

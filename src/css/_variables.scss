@@ -2,13 +2,15 @@
 
 	
 	// DARK THEME VARIABLES
-	--dark-maincolor: #71E6E7;
+	--dark-maincolor: #71E6E7 ; 
 	--dark-text-color: #747072;
 	--dark-2text-color: rgb(0, 0, 0);
 	--dark-3text-color: #ffff;
 	--dark-seccolor: #E77371;
 	--dark-seccolor-2: #c97270;
 	--dark-neutralcolor: #04c4cc;
+	--dark-neutralcolor-2: #609C9C;
+	
 	--dark-theme: #333032;
 	
     // LIGHT THEME VARIABLES
@@ -19,6 +21,7 @@
 	--light-seccolor: #FF7100;
 	--light-seccolor-2: #FF7100;
 	--light-neutralcolor: #fd7e16;
+	--light-neutralcolor-2: #008EFF;
 	--light-theme: #f1f1f3;
 	
     // MAIN VARIABLES
@@ -29,6 +32,7 @@
 	--seccolor: var(--dark-seccolor);
 	--seccolor-2: var(--dark-seccolor-2);
 	--neutralcolor: var(--dark-neutralcolor);
+	--neutralcolor-2: var(--dark-neutralcolor-2);
 	--theme: var(--dark-theme);
 	--fs-300: 1rem;
 	--fs-400: 2rem;

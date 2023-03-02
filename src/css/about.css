@@ -1,11 +1,12 @@
 :root {
-  --dark-maincolor: #71E6E7;
+  --dark-maincolor: #71E6E7 ;
   --dark-text-color: #747072;
   --dark-2text-color: rgb(0, 0, 0);
   --dark-3text-color: #ffff;
   --dark-seccolor: #E77371;
   --dark-seccolor-2: #c97270;
   --dark-neutralcolor: #04c4cc;
+  --dark-neutralcolor-2: #609C9C;
   --dark-theme: #333032;
   --light-maincolor: #008EFF;
   --light-text-color: #050A30;
@@ -14,6 +15,7 @@
   --light-seccolor: #FF7100;
   --light-seccolor-2: #FF7100;
   --light-neutralcolor: #fd7e16;
+  --light-neutralcolor-2: #008EFF;
   --light-theme: #f1f1f3;
   --maincolor: var(--dark-maincolor);
   --text-color: var(--dark-text-color);
@@ -22,6 +24,7 @@
   --seccolor: var(--dark-seccolor);
   --seccolor-2: var(--dark-seccolor-2);
   --neutralcolor: var(--dark-neutralcolor);
+  --neutralcolor-2: var(--dark-neutralcolor-2);
   --theme: var(--dark-theme);
   --fs-300: 1rem;
   --fs-400: 2rem;
@@ -63,8 +66,8 @@ html:focus-within {
 }
 
 a {
-  text-decoration: none;
-  color: white;
+  text-decoration: none !important;
+  color: white !important;
 }
 
 body {
@@ -183,19 +186,19 @@ header h2 span {
   width: 5rem;
 }
 
-.navbar {
+.navbar-mine {
   position: relative;
   height: 100%;
   margin-right: 3rem;
 }
 
-.navbar--links {
-  color: var(--text3-color);
+.navbar--links-mine {
+  color: var(--text3-color) !important;
   font-size: var(--fs-300);
   position: relative;
 }
 
-.menu {
+.menu-mine {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -303,7 +306,7 @@ i {
 }
 
 .hire-me {
-  color: var(--maincolor);
+  color: var(--maincolor) !important;
 }
 
 @media (min-width: 2000px) {
@@ -397,6 +400,17 @@ i {
   }
 }
 /* ABOUT ME */
+@-webkit-keyframes wave {
+  0% {
+    transform: translateX(50%);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 @keyframes wave {
   0% {
     transform: translateX(50%);
@@ -408,6 +422,17 @@ i {
     transform: translateX(-100%);
   }
 }
+@-webkit-keyframes waveheight {
+  0% {
+    top: 0rem;
+  }
+  50% {
+    top: -0.3rem;
+  }
+  100% {
+    top: -0.8rem;
+  }
+}
 @keyframes waveheight {
   0% {
     top: 0rem;
@@ -417,6 +442,14 @@ i {
   }
   100% {
     top: -0.8rem;
+  }
+}
+@-webkit-keyframes rellenar {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: var(--amount-filled);
   }
 }
 @keyframes rellenar {
@@ -458,6 +491,10 @@ i {
   width: 44vw;
 }
 
+.lighttitle {
+  background: transparent;
+}
+
 .barra {
   position: relative;
   display: flex;
@@ -479,55 +516,66 @@ i {
 }
 
 .about {
+  display: flex;
+  flex-direction: row;
   position: relative;
+  justify-content: space-around;
   width: 100vw;
   margin-top: 5rem;
 }
 
-.career {
+.career, .about--description {
   position: relative;
   box-sizing: border-box;
-  margin: 5rem;
   padding: 2rem;
-  width: 20vw;
+  width: 18vw;
   height: 80vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   background: linear-gradient(to top, var(--seccolor-2), var(--seccolor-2), var(--theme));
   border-radius: 10px;
   transition: all 500ms;
-  color: white;
-  gap: 2rem;
+  color: var(--text3-color);
+  font-weight: var(--fw-400);
 }
-
-.career:hover {
+.career:hover, .about--description:hover {
   transition: all 500ms;
   opacity: 80%;
   background: var(--seccolor-2);
   box-shadow: 0 0 20px 1px var(--seccolor);
 }
+.career img, .about--description img {
+  width: 55%;
+}
 
 .stage {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   text-align: center;
+  gap: 1rem;
   width: 70%;
-  font-size: calc(var(--fs-300) * 1.1);
+  font-size: var(--fs-300);
 }
 
 .stage--left {
   margin-left: 4.6rem;
-}
-
-.stage--bottom {
-  gap: 1rem;
-  margin: 1rem 0 0 2.5rem;
   flex-direction: row-reverse;
 }
 
-.career img {
-  width: 55%;
+.about--description {
+  font-size: var(--fs-300);
+  color: var(--text3-color);
+  width: 600px;
+  height: 660px;
+  background: linear-gradient(to bottom, var(--neutralcolor-2), var(--neutralcolor-2), var(--theme));
+}
+.about--description:hover {
+  transition: all 500ms;
+  opacity: 80%;
+  background: var(--neutralcolor-2);
+  box-shadow: 0 0 20px 1px var(--neutralcolor-2);
 }
 
 .arrow {
@@ -574,7 +622,8 @@ i {
   width: 100%;
   background-color: #D3602A;
   opacity: 100%;
-  animation: rellenar 1.5s forwards var(--animation-bar-delay);
+  -webkit-animation: rellenar 1.5s forwards var(--animation-bar-delay);
+          animation: rellenar 1.5s forwards var(--animation-bar-delay);
   z-index: 1;
 }
 
@@ -585,7 +634,8 @@ i {
   width: 200%;
   height: 9%;
   margin-bottom: 1rem;
-  animation: wave 4s -3s linear infinite, waveheight 2.5s forwards;
+  -webkit-animation: wave 4s -3s linear infinite, waveheight 2.5s forwards;
+          animation: wave 4s -3s linear infinite, waveheight 2.5s forwards;
   transform: translate3d(0, 0, 0);
   opacity: 0.8;
   z-index: -1;
@@ -599,7 +649,8 @@ i {
   opacity: 0.5;
 }
 .wave:nth-of-type(4) {
-  animation: wave 20s -1s linear infinite, waveheight 2.5s forwards;
+  -webkit-animation: wave 20s -1s linear infinite, waveheight 2.5s forwards;
+          animation: wave 20s -1s linear infinite, waveheight 2.5s forwards;
   opacity: 0.5;
 }
 
@@ -608,41 +659,51 @@ i {
   width: 100%;
   background-color: #D3602A;
   opacity: 100%;
-  animation: rellenar 1.5s forwards var(--animation-bar-delay);
+  -webkit-animation: rellenar 1.5s forwards var(--animation-bar-delay);
+          animation: rellenar 1.5s forwards var(--animation-bar-delay);
   z-index: 1;
-  animation-play-state: paused;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
 }
 
 .fillcont2 {
   --animation-bar-delay: .8s;
   --amount-filled: 86%;
   background-color: #2C96C4;
-  animation: rellenar 1.5s forwards var(--animation-bar-delay);
-  animation-play-state: paused;
+  -webkit-animation: rellenar 1.5s forwards var(--animation-bar-delay);
+          animation: rellenar 1.5s forwards var(--animation-bar-delay);
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
 }
 
 .fillcont3 {
   --animation-bar-delay: 1.2s;
   --amount-filled: 79%;
   background-color: #cab301;
-  animation: rellenar 1.5s forwards var(--animation-bar-delay);
-  animation-play-state: paused;
+  -webkit-animation: rellenar 1.5s forwards var(--animation-bar-delay);
+          animation: rellenar 1.5s forwards var(--animation-bar-delay);
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
 }
 
 .fillcont4 {
   --animation-bar-delay: 1.5s;
   --amount-filled: 92%;
   background-color: #747ca0;
-  animation: rellenar 1.5s forwards var(--animation-bar-delay);
-  animation-play-state: paused;
+  -webkit-animation: rellenar 1.5s forwards var(--animation-bar-delay);
+          animation: rellenar 1.5s forwards var(--animation-bar-delay);
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
 }
 
 .fillcont5 {
   --animation-bar-delay: 1.8s;
   --amount-filled: 75%;
   background-color: #1261aa;
-  animation: rellenar 1.5s forwards var(--animation-bar-delay);
-  animation-play-state: paused;
+  -webkit-animation: rellenar 1.5s forwards var(--animation-bar-delay);
+          animation: rellenar 1.5s forwards var(--animation-bar-delay);
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
 }
 
 .container {

@@ -21,8 +21,8 @@ html {
 	}
 }
 a {
-	text-decoration: none;
-	color: white;
+	text-decoration: none !important;
+	color: white !important; 
 }
 body {
 	min-height: 100vh;
