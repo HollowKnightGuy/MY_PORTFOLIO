@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+
 
     <title>Portfolio - About Me </title>
   </head>
@@ -158,42 +160,44 @@
         <h1 class="h1about h1about--left">Projects</h1>
         
       </div>
+      <div class="carousel-container" style="height: 100%;">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up" data-aos-duration="500">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a href="https://github.com/HollowKnightGuy/PROYECTO_SENDERISMO_PHP" target="_blank" class="projectGit">
+                <picture>
+                  <source type="image/png"  media="(max-width: 2000px)" srcset="../images/senderismo-iconorigin40per.png" class="aether"/>
+                  <source type="image/png"  media="(max-width: 1200px)" srcset="../images/senderismo-iconorigin20per.png" class="aether"/>
+                  <source type="image/png"  media="(max-width: 500px)" srcset="../images/senderismo-iconorigin10per.png" class="aether"/>
+                  <img src="../images/senderismo-iconorigin20per.png" class="mt-1 mb-3 mx-auto" alt="...">
+                </picture>
+              </a>
 
-      <div id="carouselExample" class="carousel slide">
-        <div class="carousel-inner">
+            </div>
+            <div class="carousel-item">
+              <a href="https://github.com/HollowKnightGuy/ARTIC_SHOP" target="_blank" class="projectGit">
+                <img src="../images/icons/Atic_ico20per.png" style="border-radius: 300px;" class="m-auto" alt="...">
+              </a>
 
-          <!--Elemento 1 del carousel-->
+            </div>
+            <div class="carousel-item">
+              <a href="https://github.com/HollowKnightGuy/ROCK_PAPER_SCISSORS_LIZARD_SPOCK" target="_blank" class="projectGit">
+                <img src="../images/rps-iconorigin20per.png" class="m-auto" alt="...">
+              </a>
 
-          <div class="carousel-item">
-            <div class="container col-xxl-8 px-4 py-5">
-              <a href=""><img src="../images/icons/Atic_ico.png" alt="" width="300px" height="200px"></a>
             </div>
           </div>
-
-          <!--Elemento 2 del carousel-->
-          <div class="carousel-item">
-            <div class="container col-xxl-8 px-4 py-5">
-              <a href=""><img src="../images/icons/rpp-icon.png" width="300px" height="200px" alt=""></a>
-            </div>
-          </div>
-
-          <!--Elemento 3 del carousel-->
-          <div class="carousel-item">
-            <div class="container col-xxl-8 px-4 py-5">
-              <a href=""><img src="../images/icons/senderismo-icon.png" width="300px" height="200px" alt=""></a>
-            </div>
-          </div>
-
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
+      
     </section>
   </div>
 
