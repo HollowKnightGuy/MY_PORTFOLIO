@@ -45,8 +45,8 @@ main{
 .contacttitle {
     text-align: center;
     width: 100%;
-    font-size: 3em;
-    margin: 2rem;
+    font-size: var(--fs-600);
+    margin: 2rem 0;
     font-weight: var(--fw-600);
     color: var(--text3-color);
 }
@@ -103,6 +103,7 @@ main{
 
 .contact-form form label {
     display: block;
+    transition: all 200ms;
 }
 
 .contact-form form p {
@@ -123,6 +124,11 @@ main{
 }
 
 
+
+.contact-form form input:focus label{
+    color: var(--maincolor);
+}
+
 #button{
     grid-area: button;
 
@@ -140,14 +146,14 @@ main{
     z-index: 1;
     overflow: hidden;
     display: inline-block;
-    transition: all 200ms;
+    transition: all 400ms;
     font-weight: var(--fw-600);
   }
 
 
   .ov-btn-slide-right:hover {
     letter-spacing: 8px;
-    transition: all 200ms;
+    transition: all 400ms;
   }
 
 

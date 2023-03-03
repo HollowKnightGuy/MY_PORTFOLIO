@@ -28,7 +28,7 @@ toggle.addEventListener('click', function(){
 // CHANGE THE CLASS TO THE NAV 
 document.querySelector('.toggle').addEventListener('click', function() {
   this.classList.toggle('activate');
-  document.querySelector('.menu').classList.toggle('menu-column');
+  document.querySelector('.menu-mine').classList.toggle('menu-column');
 });
 
 // CONTROL WHEN THE ANIMATION OF THE BARS STARTS TO OCCUR IN ABOUT ME
@@ -49,8 +49,28 @@ $(document).on("scroll", function(){
 });
 
 
+const input1 = document.getElementById('nameinput');
+const input2 = document.getElementById('phoneinput');
+const input3 = document.getElementById('emailinput');
+const input4 = document.getElementById('messageinput');
 
 
 
+input1.addEventListener('blur', function () { 
+    input1.previousElementSibling.style.color = 'var(--text3-color)';
+})
+
+
+input2.addEventListener('blur', function () { 
+    input2.previousElementSibling.style.color = 'var(--text3-color)';
+})
+
+input3.addEventListener('blur', function () { 
+    input3.previousElementSibling.style.color = 'var(--text3-color)';
+})
+
+input4.addEventListener('blur', function () { 
+    input4.previousElementSibling.style.color = 'var(--text3-color)';
+})
 
 AOS.init();

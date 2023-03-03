@@ -23,7 +23,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
 
-    <title>Portfolio - About Me </title>
+    <title>Portfolio - Hire Me </title>
   </head>
   <body>
 
@@ -71,19 +71,19 @@
                 <form action="">
                     <p id="nameform">
                         <label>FullName Or Company</label>
-                        <input type="text" name="fullname">
+                        <input id="nameinput" type="text" name="fullname" onfocus="this.previousElementSibling.style.color = 'var(--maincolor)'">
                     </p>
                     <p id="phone">
                         <label>Phone Number</label>
-                        <input type="tel" name="phone">
+                        <input id="phoneinput" type="tel" name="phone" onfocus="this.previousElementSibling.style.color = 'var(--maincolor)'">
                     </p>
                     <p id="email">
                         <label>Email Adress</label>
-                        <input type="email" name="email">
+                        <input id="emailinput" type="email" name="email" onfocus="this.previousElementSibling.style.color = 'var(--maincolor)'">
                     </p>
                     <p class="block" id="message">
                        <label>Message</label> 
-                        <textarea name="message" rows="3"></textarea>
+                        <textarea id="messageinput" name="message" rows="3" onfocus="this.previousElementSibling.style.color = 'var(--maincolor)'"></textarea>
                     </p>
                     <p id="button">
                         <button class="ov-btn-slide-right">

@@ -369,8 +369,7 @@ i {
     display: flex;
     z-index: 15;
   }
-  .menu {
-    display: none;
+  .menu-mine {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -383,13 +382,13 @@ i {
     z-index: 10;
     transition: all 300ms;
   }
-  .menu > li > .navbar--links {
+  .menu-mine > li > .navbar--links-mine {
     margin: 1rem;
   }
-  .menu > li:nth-child(1) {
+  .menu-mine > li:nth-child(1) {
     padding-top: 1.5rem;
   }
-  .menu > li:last-child {
+  .menu-mine > li:last-child {
     padding-bottom: 1.5rem;
   }
   .menu-column {
@@ -401,7 +400,7 @@ i {
     padding-left: 1.5rem;
     width: 80px;
   }
-  .navbar {
+  .navbar-mine {
     width: 100%;
     height: 100%;
     display: flex;
@@ -460,8 +459,8 @@ main {
 .contacttitle {
   text-align: center;
   width: 100%;
-  font-size: 3em;
-  margin: 2rem;
+  font-size: var(--fs-600);
+  margin: 2rem 0;
   font-weight: var(--fw-600);
   color: var(--text3-color);
 }
@@ -511,6 +510,7 @@ main {
 
 .contact-form form label {
   display: block;
+  transition: all 200ms;
 }
 
 .contact-form form p {
@@ -529,6 +529,10 @@ main {
   border-bottom: 1px solid var(--maincolor);
 }
 
+.contact-form form input:focus label {
+  color: var(--maincolor);
+}
+
 #button {
   grid-area: button;
 }
@@ -544,13 +548,13 @@ main {
   z-index: 1;
   overflow: hidden;
   display: inline-block;
-  transition: all 200ms;
+  transition: all 400ms;
   font-weight: var(--fw-600);
 }
 
 .ov-btn-slide-right:hover {
   letter-spacing: 8px;
-  transition: all 200ms;
+  transition: all 400ms;
 }
 
 .ov-btn-slide-right::after {
@@ -581,8 +585,8 @@ main {
     grid-template-columns: 2fr 1fr;
   }
   .contact-info h4,
-  .contact-info ul,
-  .contact-info p {
+.contact-info ul,
+.contact-info p {
     text-align: left;
   }
 }
