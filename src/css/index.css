@@ -3,6 +3,9 @@
   --dark-text-color: #747072;
   --dark-2text-color: rgb(0, 0, 0);
   --dark-3text-color: #ffff;
+  --dark-form-button-hover: white;
+  --dark-form-info-color: black;
+  --dark-form-theme-color: #292728;
   --dark-seccolor: #E77371;
   --dark-seccolor-2: #c97270;
   --dark-neutralcolor: #04c4cc;
@@ -12,6 +15,9 @@
   --light-text-color: #050A30;
   --light-2text-color: #050A30;
   --light-3text-color: #050A30;
+  --light-form-button-hover: black;
+  --light-form-info-color: white;
+  --light-form-theme-color: rgb(211, 207, 209);
   --light-seccolor: #FF7100;
   --light-seccolor-2: #FF7100;
   --light-neutralcolor: #fd7e16;
@@ -21,6 +27,9 @@
   --text-color: var(--dark-text-color);
   --text2-color: var(--dark-2text-color);
   --text3-color: var(--dark-3text-color);
+  --form-button-hover: var(--dark-form-button-hover);
+  --form-info-color: var(--dark-form-info-color);
+  --form-theme: var(--dark-form-theme-color);
   --seccolor: var(--dark-seccolor);
   --seccolor-2: var(--dark-seccolor-2);
   --neutralcolor: var(--dark-neutralcolor);
@@ -90,20 +99,28 @@ img {
   --text-color: var(--dark-text-color);
   --text2-color: var(--dark-2text-color);
   --text3-color: var(--dark-3text-color);
+  --form-button-hover: var(--dark-form-button-hover);
+  --form-info-color: var(--dark-form-info-color);
+  --form-theme: var(--dark-form-theme-color);
   --seccolor: var(--dark-seccolor);
   --seccolor-2: var(--dark-seccolor-2);
   --neutralcolor: var(--dark-neutralcolor);
+  --neutralcolor-2: var(--dark-neutralcolor-2);
   --theme: var(--dark-theme);
 }
 
 .light-theme {
   --maincolor: var(--light-maincolor);
   --text-color: var(--light-text-color);
-  --text2-color: var(--light-text-color);
-  --text3-color: var(--light-text-color);
+  --text2-color: var(--light-2text-color);
+  --text3-color: var(--light-3text-color);
+  --form-button-hover: var(--light-form-button-hover);
+  --form-info-color: var(--light-form-info-color);
+  --form-theme: var(--light-form-theme-color);
   --seccolor: var(--light-seccolor);
   --seccolor-2: var(--light-seccolor-2);
   --neutralcolor: var(--light-neutralcolor);
+  --neutralcolor-2: var(--light-neutralcolor-2);
   --theme: var(--light-theme);
 }
 

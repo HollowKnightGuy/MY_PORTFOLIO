@@ -3,6 +3,9 @@
   --dark-text-color: #747072;
   --dark-2text-color: rgb(0, 0, 0);
   --dark-3text-color: #ffff;
+  --dark-form-button-hover: white;
+  --dark-form-info-color: black;
+  --dark-form-theme-color: #292728;
   --dark-seccolor: #E77371;
   --dark-seccolor-2: #c97270;
   --dark-neutralcolor: #04c4cc;
@@ -12,6 +15,9 @@
   --light-text-color: #050A30;
   --light-2text-color: #050A30;
   --light-3text-color: #050A30;
+  --light-form-button-hover: black;
+  --light-form-info-color: white;
+  --light-form-theme-color: rgb(211, 207, 209);
   --light-seccolor: #FF7100;
   --light-seccolor-2: #FF7100;
   --light-neutralcolor: #fd7e16;
@@ -21,6 +27,9 @@
   --text-color: var(--dark-text-color);
   --text2-color: var(--dark-2text-color);
   --text3-color: var(--dark-3text-color);
+  --form-button-hover: var(--dark-form-button-hover);
+  --form-info-color: var(--dark-form-info-color);
+  --form-theme: var(--dark-form-theme-color);
   --seccolor: var(--dark-seccolor);
   --seccolor-2: var(--dark-seccolor-2);
   --neutralcolor: var(--dark-neutralcolor);
@@ -90,20 +99,28 @@ img {
   --text-color: var(--dark-text-color);
   --text2-color: var(--dark-2text-color);
   --text3-color: var(--dark-3text-color);
+  --form-button-hover: var(--dark-form-button-hover);
+  --form-info-color: var(--dark-form-info-color);
+  --form-theme: var(--dark-form-theme-color);
   --seccolor: var(--dark-seccolor);
   --seccolor-2: var(--dark-seccolor-2);
   --neutralcolor: var(--dark-neutralcolor);
+  --neutralcolor-2: var(--dark-neutralcolor-2);
   --theme: var(--dark-theme);
 }
 
 .light-theme {
   --maincolor: var(--light-maincolor);
   --text-color: var(--light-text-color);
-  --text2-color: var(--light-text-color);
-  --text3-color: var(--light-text-color);
+  --text2-color: var(--light-2text-color);
+  --text3-color: var(--light-3text-color);
+  --form-button-hover: var(--light-form-button-hover);
+  --form-info-color: var(--light-form-info-color);
+  --form-theme: var(--light-form-theme-color);
   --seccolor: var(--light-seccolor);
   --seccolor-2: var(--light-seccolor-2);
   --neutralcolor: var(--light-neutralcolor);
+  --neutralcolor-2: var(--light-neutralcolor-2);
   --theme: var(--light-theme);
 }
 
@@ -401,17 +418,6 @@ i {
   }
 }
 /* ABOUT ME */
-@-webkit-keyframes wave {
-  0% {
-    transform: translateX(50%);
-  }
-  50% {
-    transform: translateX(-50%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
 @keyframes wave {
   0% {
     transform: translateX(50%);
@@ -423,17 +429,6 @@ i {
     transform: translateX(-100%);
   }
 }
-@-webkit-keyframes waveheight {
-  0% {
-    top: 0rem;
-  }
-  50% {
-    top: -0.3rem;
-  }
-  100% {
-    top: -0.8rem;
-  }
-}
 @keyframes waveheight {
   0% {
     top: 0rem;
@@ -443,14 +438,6 @@ i {
   }
   100% {
     top: -0.8rem;
-  }
-}
-@-webkit-keyframes rellenar {
-  0% {
-    height: 0%;
-  }
-  100% {
-    height: var(--amount-filled);
   }
 }
 @keyframes rellenar {
@@ -535,27 +522,13 @@ i {
 }
 
 .english-fill {
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
-  -webkit-animation: fillenglishlevel 2s forwards;
-          animation: fillenglishlevel 2s forwards;
+  animation-play-state: paused;
+  animation: fillenglishlevel 2s forwards;
 }
 
 .spanish-fill {
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
-  -webkit-animation: fillspanishlevel 2s forwards;
-          animation: fillspanishlevel 2s forwards;
-}
-
-@-webkit-keyframes fillenglishlevel {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 77%;
-    opacity: 1;
-  }
+  animation-play-state: paused;
+  animation: fillspanishlevel 2s forwards;
 }
 
 @keyframes fillenglishlevel {
@@ -565,14 +538,6 @@ i {
   100% {
     width: 77%;
     opacity: 1;
-  }
-}
-@-webkit-keyframes fillspanishlevel {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 100%;
   }
 }
 @keyframes fillspanishlevel {
@@ -721,8 +686,7 @@ i {
   width: 100%;
   background-color: #D3602A;
   opacity: 100%;
-  -webkit-animation: rellenar 1.5s forwards var(--animation-bar-delay);
-          animation: rellenar 1.5s forwards var(--animation-bar-delay);
+  animation: rellenar 1.5s forwards var(--animation-bar-delay);
   z-index: 1;
 }
 
@@ -733,8 +697,7 @@ i {
   width: 200%;
   height: 9%;
   margin-bottom: 1rem;
-  -webkit-animation: wave 4s -3s linear infinite, waveheight 2.5s forwards;
-          animation: wave 4s -3s linear infinite, waveheight 2.5s forwards;
+  animation: wave 4s -3s linear infinite, waveheight 2.5s forwards;
   transform: translate3d(0, 0, 0);
   opacity: 0.8;
   z-index: -1;
@@ -748,8 +711,7 @@ i {
   opacity: 0.5;
 }
 .wave:nth-of-type(4) {
-  -webkit-animation: wave 20s -1s linear infinite, waveheight 2.5s forwards;
-          animation: wave 20s -1s linear infinite, waveheight 2.5s forwards;
+  animation: wave 20s -1s linear infinite, waveheight 2.5s forwards;
   opacity: 0.5;
 }
 
@@ -758,51 +720,41 @@ i {
   width: 100%;
   background-color: #D3602A;
   opacity: 100%;
-  -webkit-animation: rellenar 1.5s forwards var(--animation-bar-delay);
-          animation: rellenar 1.5s forwards var(--animation-bar-delay);
+  animation: rellenar 1.5s forwards var(--animation-bar-delay);
   z-index: 1;
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
+  animation-play-state: paused;
 }
 
 .fillcont2 {
   --animation-bar-delay: .8s;
   --amount-filled: 86%;
   background-color: #2C96C4;
-  -webkit-animation: rellenar 1.5s forwards var(--animation-bar-delay);
-          animation: rellenar 1.5s forwards var(--animation-bar-delay);
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
+  animation: rellenar 1.5s forwards var(--animation-bar-delay);
+  animation-play-state: paused;
 }
 
 .fillcont3 {
   --animation-bar-delay: 1.2s;
   --amount-filled: 79%;
   background-color: #cab301;
-  -webkit-animation: rellenar 1.5s forwards var(--animation-bar-delay);
-          animation: rellenar 1.5s forwards var(--animation-bar-delay);
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
+  animation: rellenar 1.5s forwards var(--animation-bar-delay);
+  animation-play-state: paused;
 }
 
 .fillcont4 {
   --animation-bar-delay: 1.5s;
   --amount-filled: 92%;
   background-color: #747ca0;
-  -webkit-animation: rellenar 1.5s forwards var(--animation-bar-delay);
-          animation: rellenar 1.5s forwards var(--animation-bar-delay);
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
+  animation: rellenar 1.5s forwards var(--animation-bar-delay);
+  animation-play-state: paused;
 }
 
 .fillcont5 {
   --animation-bar-delay: 1.8s;
   --amount-filled: 75%;
   background-color: #1261aa;
-  -webkit-animation: rellenar 1.5s forwards var(--animation-bar-delay);
-          animation: rellenar 1.5s forwards var(--animation-bar-delay);
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
+  animation: rellenar 1.5s forwards var(--animation-bar-delay);
+  animation-play-state: paused;
 }
 
 .container {

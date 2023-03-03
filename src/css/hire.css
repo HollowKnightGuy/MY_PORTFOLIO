@@ -1,8 +1,12 @@
+@charset "UTF-8";
 :root {
   --dark-maincolor: #71E6E7 ;
   --dark-text-color: #747072;
   --dark-2text-color: rgb(0, 0, 0);
   --dark-3text-color: #ffff;
+  --dark-form-button-hover: white;
+  --dark-form-info-color: black;
+  --dark-form-theme-color: #292728;
   --dark-seccolor: #E77371;
   --dark-seccolor-2: #c97270;
   --dark-neutralcolor: #04c4cc;
@@ -12,6 +16,9 @@
   --light-text-color: #050A30;
   --light-2text-color: #050A30;
   --light-3text-color: #050A30;
+  --light-form-button-hover: black;
+  --light-form-info-color: white;
+  --light-form-theme-color: rgb(211, 207, 209);
   --light-seccolor: #FF7100;
   --light-seccolor-2: #FF7100;
   --light-neutralcolor: #fd7e16;
@@ -21,6 +28,9 @@
   --text-color: var(--dark-text-color);
   --text2-color: var(--dark-2text-color);
   --text3-color: var(--dark-3text-color);
+  --form-button-hover: var(--dark-form-button-hover);
+  --form-info-color: var(--dark-form-info-color);
+  --form-theme: var(--dark-form-theme-color);
   --seccolor: var(--dark-seccolor);
   --seccolor-2: var(--dark-seccolor-2);
   --neutralcolor: var(--dark-neutralcolor);
@@ -90,20 +100,28 @@ img {
   --text-color: var(--dark-text-color);
   --text2-color: var(--dark-2text-color);
   --text3-color: var(--dark-3text-color);
+  --form-button-hover: var(--dark-form-button-hover);
+  --form-info-color: var(--dark-form-info-color);
+  --form-theme: var(--dark-form-theme-color);
   --seccolor: var(--dark-seccolor);
   --seccolor-2: var(--dark-seccolor-2);
   --neutralcolor: var(--dark-neutralcolor);
+  --neutralcolor-2: var(--dark-neutralcolor-2);
   --theme: var(--dark-theme);
 }
 
 .light-theme {
   --maincolor: var(--light-maincolor);
   --text-color: var(--light-text-color);
-  --text2-color: var(--light-text-color);
-  --text3-color: var(--light-text-color);
+  --text2-color: var(--light-2text-color);
+  --text3-color: var(--light-3text-color);
+  --form-button-hover: var(--light-form-button-hover);
+  --form-info-color: var(--light-form-info-color);
+  --form-theme: var(--light-form-theme-color);
   --seccolor: var(--light-seccolor);
   --seccolor-2: var(--light-seccolor-2);
   --neutralcolor: var(--light-neutralcolor);
+  --neutralcolor-2: var(--light-neutralcolor-2);
   --theme: var(--light-theme);
 }
 
@@ -398,6 +416,189 @@ i {
   }
   header {
     grid-template-columns: 2fr 1.2fr;
+  }
+}
+main {
+  padding: 0 4em;
+}
+
+.container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5em;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background: var(--maincolor);
+}
+
+.contact-info--ul {
+  color: var(--form-info-color);
+}
+
+.contact-info--ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info--ul li {
+  display: flex;
+  gap: 1rem;
+  margin: auto;
+}
+
+.contacttitle {
+  text-align: center;
+  width: 100%;
+  font-size: 3em;
+  margin: 2rem;
+  font-weight: var(--fw-600);
+  color: var(--text3-color);
+}
+
+.contacttitle span {
+  color: var(--maincolor);
+}
+
+.contact-wrapper {
+  box-shadow: 0 0 20px 0 var(--maincolor);
+  font-size: var(--fs-300);
+  color: var(--text3-color);
+  transition: all 300ms;
+}
+
+.contact-wrapper > * {
+  padding: 1em;
+}
+
+.contact-form {
+  background: var(--theme);
+}
+
+.contact-form form {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1.5fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+  grid-template-areas: "name phone" "email email" "message message" "button button";
+}
+
+#nameform {
+  grid-area: name;
+}
+
+#phone {
+  grid-area: phone;
+}
+
+#email {
+  grid-area: email;
+}
+
+#message {
+  grid-area: message;
+}
+
+.contact-form form label {
+  display: block;
+}
+
+.contact-form form p {
+  margin: 0;
+  padding: 1em;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+  width: 100%;
+  padding: 0.7em;
+  border: none;
+  background: none;
+  outline: 0;
+  color: var(--text3-color);
+  border-bottom: 1px solid var(--maincolor);
+}
+
+#button {
+  grid-area: button;
+}
+
+.ov-btn-slide-right {
+  width: 100%;
+  background: var(--maincolor); /* color de fondo */
+  color: var(--text2-color); /* color de fuente */
+  border: none; /* tamaño y color de borde */
+  padding: 16px 20px;
+  border-radius: 3px; /* redondear bordes */
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: inline-block;
+  transition: all 200ms;
+  font-weight: var(--fw-600);
+}
+
+.ov-btn-slide-right:hover {
+  letter-spacing: 8px;
+  transition: all 200ms;
+}
+
+.ov-btn-slide-right::after {
+  content: "";
+  background: var(--form-button-hover);
+  position: absolute;
+  z-index: -1;
+  padding: 16px 20px;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  right: 100%;
+  transition: all 0.35s;
+}
+
+.ov-btn-slide-right:hover::after {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: all 0.35s;
+}
+
+/* LARGE SIZE */
+@media (min-width: 700px) {
+  .contact-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .contact-info h4,
+  .contact-info ul,
+  .contact-info p {
+    text-align: left;
+  }
+}
+@media (max-width: 700px) {
+  main {
+    padding: 0 2em;
+  }
+  .contact-wrapper {
+    box-shadow: none;
+  }
+  .contact-form {
+    background-color: var(--form-theme);
+  }
+  .contact-form form {
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "name " "phone " "email " "message " "button ";
   }
 }
 footer {
