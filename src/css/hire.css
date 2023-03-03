@@ -4,7 +4,7 @@
   --dark-text-color: #747072;
   --dark-2text-color: rgb(0, 0, 0);
   --dark-3text-color: #ffff;
-  --dark-form-button-hover: white;
+  --dark-form-button-hover: rgb(245, 245, 245);
   --dark-form-info-color: black;
   --dark-form-theme-color: #292728;
   --dark-seccolor: #E77371;
@@ -434,6 +434,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-weight: var(--fw-600);
   gap: 1rem;
   background: var(--maincolor);
 }
@@ -535,7 +536,7 @@ main {
 .ov-btn-slide-right {
   width: 100%;
   background: var(--maincolor); /* color de fondo */
-  color: var(--text2-color); /* color de fuente */
+  color: var(--form-info-color); /* color de fuente */
   border: none; /* tamaño y color de borde */
   padding: 16px 20px;
   border-radius: 3px; /* redondear bordes */

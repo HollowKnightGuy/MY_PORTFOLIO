@@ -14,6 +14,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-weight: var(--fw-600);
     gap: 1rem;
     background: var(--maincolor);
     
@@ -131,7 +132,7 @@ main{
 .ov-btn-slide-right {
     width: 100%;
     background: var(--maincolor); /* color de fondo */
-    color: var(--text2-color); /* color de fuente */
+    color: var(--form-info-color); /* color de fuente */
     border: none; /* tamaño y color de borde */
     padding: 16px 20px;
     border-radius: 3px; /* redondear bordes */
