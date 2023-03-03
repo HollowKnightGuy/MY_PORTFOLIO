@@ -235,21 +235,7 @@
 	}
 }
 
-.arrow {
-	position: absolute;
-}
-.arrow1 {
-	rotate: (-70deg);
-	scale: .5;
-	transform: scaleX(-1);
-	margin: 4% 0 0 33%;
-}
-.arrow2 {
-	rotate: (60deg);
-	scale: .6;
-	margin-top: 70%;
-	left: 0px;
-}
+
 
 
 .barra1 {
@@ -342,12 +328,14 @@
 	animation-play-state: paused;
 }
 
-.container {
+.container-mine {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	padding: 0;
+	margin: 4rem auto 0 auto !important;
 	height: 32rem;
-	width: 100%;
+	width: 100vw;
 	>.barra {
         /* IF WE ANT TO CHANGE THE SVG COLOR(WAVE EFFECT) WE HAVE TO EDIT THE "fill" ATTRIBUTE AND CHANGE THE CONTENT  AFTER "%23%"(MEANS "#") AND WRITE A HEX COLOR */
 		&:nth-child(2) {
@@ -404,5 +392,7 @@
 		-webkit-transform:scale(1.01);transform:scale(1.01);
 	}
 }
+
+
 
 

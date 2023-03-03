@@ -693,24 +693,6 @@ i {
   box-shadow: 0 0 20px 1px var(--neutralcolor-2);
 }
 
-.arrow {
-  position: absolute;
-}
-
-.arrow1 {
-  rotate: -70deg;
-  scale: 0.5;
-  transform: scaleX(-1);
-  margin: 4% 0 0 33%;
-}
-
-.arrow2 {
-  rotate: 60deg;
-  scale: 0.6;
-  margin-top: 70%;
-  left: 0px;
-}
-
 .barra1 {
   background-color: #80c8e7;
 }
@@ -821,26 +803,28 @@ i {
           animation-play-state: paused;
 }
 
-.container {
+.container-mine {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 0;
+  margin: 4rem auto 0 auto !important;
   height: 32rem;
-  width: 100%;
+  width: 100vw;
 }
-.container > .barra {
+.container-mine > .barra {
   /* IF WE ANT TO CHANGE THE SVG COLOR(WAVE EFFECT) WE HAVE TO EDIT THE "fill" ATTRIBUTE AND CHANGE THE CONTENT  AFTER "%23%"(MEANS "#") AND WRITE A HEX COLOR */
 }
-.container > .barra:nth-child(2) > div > .wave {
+.container-mine > .barra:nth-child(2) > div > .wave {
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 88.7'%3E%3Cpath d='M800 56.9c-155.5 0-204.9-50-405.5-49.9-200 0-250 49.9-394.5 49.9v31.8h800v-.2-31.6z' fill='%232C96C4'/%3E%3C/svg%3E");
 }
-.container > .barra:nth-child(3) > div > .wave {
+.container-mine > .barra:nth-child(3) > div > .wave {
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 88.7'%3E%3Cpath d='M800 56.9c-155.5 0-204.9-50-405.5-49.9-200 0-250 49.9-394.5 49.9v31.8h800v-.2-31.6z' fill='%23cab301'/%3E%3C/svg%3E");
 }
-.container > .barra:nth-child(4) > div > .wave {
+.container-mine > .barra:nth-child(4) > div > .wave {
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 88.7'%3E%3Cpath d='M800 56.9c-155.5 0-204.9-50-405.5-49.9-200 0-250 49.9-394.5 49.9v31.8h800v-.2-31.6z' fill='%23747ca0'/%3E%3C/svg%3E");
 }
-.container > .barra:nth-child(5) > div > .wave {
+.container-mine > .barra:nth-child(5) > div > .wave {
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 88.7'%3E%3Cpath d='M800 56.9c-155.5 0-204.9-50-405.5-49.9-200 0-250 49.9-394.5 49.9v31.8h800v-.2-31.6z' fill='%231261aa'/%3E%3C/svg%3E");
 }
 
