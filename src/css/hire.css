@@ -173,6 +173,9 @@ img {
 }
 
 @media (min-width: 2000px) {
+  ::-webkit-scrollbar {
+    width: 20px;
+  }
   :root {
     --fs-300: 2.8rem;
     --fs-400: 3.2rem;
@@ -450,6 +453,12 @@ i {
     grid-template-columns: 2fr 1.2fr;
   }
 }
+body {
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
 main {
   padding: 0 4em;
 }

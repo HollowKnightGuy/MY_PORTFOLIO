@@ -113,6 +113,9 @@ img {
 
 
 @media (min-width: 2000px) {
+	::-webkit-scrollbar{
+		width: 20px;
+	}
 	:root {
 		--fs-300: 2.8rem;
 		--fs-400: 3.2rem;
