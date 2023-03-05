@@ -29,6 +29,7 @@
     "rimraf": "^4.1.2"
   },
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.3",
     "aos": "^2.3.4",
     "parcel": "^2.8.3",
     "parcel-plugin-imagemin": "^4.0.2",
