@@ -11,6 +11,8 @@
 	--dark-form-button-hover: rgb(245, 245, 245); 
 	--dark-form-info-color: black;
 	--dark-form-theme-color: #292728;
+	--dark-bg-color-scrollbar: #444143; 
+
 	--dark-seccolor: #E77371;
 	--dark-seccolor-2: #c97270;
 	--dark-neutralcolor: #04c4cc;
@@ -27,6 +29,9 @@
 	--light-form-button-hover: black; 
 	--light-form-info-color: white; 
 	--light-form-theme-color: rgb(231, 229, 230);
+	--light-bg-color-scrollbar: #cfc9cd; 
+
+
 	--light-seccolor: #FF7100;
 	--light-seccolor-2: #FF7100;
 	--light-neutralcolor: #fd7e16;
@@ -43,6 +48,8 @@
 	--form-button-hover: var(--dark-form-button-hover); 
 	--form-info-color: var(--dark-form-info-color); 
 	--form-theme: var(--dark-form-theme-color);
+	--bg-color-scrollbar: var(--dark-bg-color-scrollbar); 
+	
 
 	--seccolor: var(--dark-seccolor);
 	--seccolor-2: var(--dark-seccolor-2);
