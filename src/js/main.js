@@ -33,23 +33,10 @@ toggle.addEventListener('click', function(){
     if(this.classList.toggle('bi-moon')){
         body.className = 'light-theme';
         body.style.transition = '.5s';
-        for(let i = 0; i < imagenes.length; i ++){
-            let imagen = (imagenes[i].src.split("dark").join("light"));
-            imagenes[i].setAttribute('src',imagen);
-            }
-        for(let i = 0; i < sources.length; i ++){
-            let imagen = (sources[i].srcset.split("dark").join("light"));
-            sources[i].setAttribute('srcset',imagen);
-            }
         }
     else{
         body.className = 'dark-theme';
         body.style.transition = '.5s';
-        for(let i = 0; i < imagenes.length; i ++){
-
-            let imagen = (imagenes[i].src.split("light").join("dark"));
-            imagenes[i].setAttribute('src',imagen);
-            }
     }
 });
 // CHANGE THE CLASS TO THE NAV 

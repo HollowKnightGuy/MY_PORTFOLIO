@@ -27,6 +27,14 @@ header {
 	}
 }
 
+.image-dark{
+	display: var(--display-picture-dark);
+}
+
+.image-light{
+	display: var(--display-picture-light);
+}
+
 .navbar-mine {
 	position: relative;
 	height: 100%;

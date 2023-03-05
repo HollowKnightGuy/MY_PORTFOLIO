@@ -37,6 +37,9 @@ img {
 	max-width: 100%;
 	display: block;
 }
+
+
+
 .dark-theme {
 	--maincolor: var(--dark-maincolor);
 	--text-color: var(--dark-text-color);
@@ -58,8 +61,13 @@ img {
 
 	--bg-color-scrollbar: var(--dark-bg-color-scrollbar); 
 
+	--display-picture-light: none;
+	--display-picture-dark: block;
+	
 	--theme: var(--dark-theme);
 }
+
+
 .light-theme {
 	--maincolor: var(--light-maincolor);
 	--text-color: var(--light-text-color);
@@ -82,10 +90,13 @@ img {
 	--color-scrollbar: var(--light-color-scrollbar); 
 	--bg-color-scrollbar: var(--light-bg-color-scrollbar); 
 
-
+	--display-picture-light: block;
+	--display-picture-dark: none;
 
 	--theme: var(--light-theme);
 }
+
+
 
 ::-webkit-scrollbar{
 	width: 10px;

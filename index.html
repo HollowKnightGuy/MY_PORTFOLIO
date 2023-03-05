@@ -20,12 +20,21 @@
     <header>
       <div>
         <a href="index.html">
-          <picture>
-            <source type="image/png" media="(min-width: 2000px)" srcset="./src/images/logo_dark144.png"/>
-            <source type="image/png" media="(min-width: 1440px)" srcset="./src/images/logo_dark104.png"/>
-            <source type="image/png" media="(max-width: 950px)" srcset="./src/images/logo_dark64.png"/>
-            <source type="image/png" media="(max-width: 560px)" srcset="./src/images/logo_dark80.png"/>
-            <img src="./src/images/logo_dark80.png" alt="logo.png" class="logo"/>
+          <picture >
+            <source class="image-dark" type="image/png" media="(min-width: 2000px)" srcset="./src/images/logo_dark144.png"/>
+            <source class="image-dark" type="image/png" media="(min-width: 1440px)" srcset="./src/images/logo_dark104.png"/>
+            <source class="image-dark" type="image/png" media="(max-width: 950px)" srcset="./src/images/logo_dark64.png"/>
+            <source class="image-dark" type="image/png" media="(max-width: 560px)" srcset="./src/images/logo_dark80.png"/>
+            <img  src="./src/images/logo_dark80.png" alt="logo.png" class="logo image-dark"/>
+          </picture>
+
+          
+          <picture >
+            <source class="image-light" type="image/png" media="(min-width: 2000px)" srcset="./src/images/logo_light144.png"/>
+            <source class="image-light" type="image/png" media="(min-width: 1440px)" srcset="./src/images/logo_light104.png"/>
+            <source class="image-light" type="image/png" media="(max-width: 950px)" srcset="./src/images/logo_light64.png"/>
+            <source class="image-light" type="image/png" media="(max-width: 560px)" srcset="./src/images/logo_light80.png"/>
+            <img src="./src/images/logo_light80.png" alt="logo.png" class="logo image-light"/>
           </picture>
         </a>
         <h2>My <span>Portfolio</span></h2>
@@ -88,38 +97,64 @@
 
     <footer>
       <div class="footer--logo">
-        <picture>
-          <source type="image/png" media="(min-width: 2000px)" srcset="./src/images/logo_dark144.png" />
-          <source type="image/png" media="(min-width: 1440px)" srcset="./src/images/logo_dark104.png" />
-          <source type="image/png" media="(max-width: 950px)" srcset="./src/images/logo_dark80.png" />
-          <source type="image/png" media="(max-width: 560px)" srcset="./src/images/logo_dark64.png" />
-          <img src="./src/images/logo_dark104.png" alt="logo.png" class="logo" />
+        <picture >
+          <source class="image-dark" type="image/png" media="(min-width: 2000px)" srcset="./src/images/logo_dark144.png"/>
+          <source class="image-dark" type="image/png" media="(min-width: 1440px)" srcset="./src/images/logo_dark104.png"/>
+          <source class="image-dark" type="image/png" media="(max-width: 950px)" srcset="./src/images/logo_dark64.png"/>
+          <source class="image-dark" type="image/png" media="(max-width: 560px)" srcset="./src/images/logo_dark80.png"/>
+          <img  src="./src/images/logo_dark80.png" alt="logo.png" class="logo image-dark"/>
+        </picture>
+
+        
+        <picture >
+          <source class="image-light" type="image/png" media="(min-width: 2000px)" srcset="./src/images/logo_light144.png"/>
+          <source class="image-light" type="image/png" media="(min-width: 1440px)" srcset="./src/images/logo_light104.png"/>
+          <source class="image-light" type="image/png" media="(max-width: 950px)" srcset="./src/images/logo_light64.png"/>
+          <source class="image-light" type="image/png" media="(max-width: 560px)" srcset="./src/images/logo_light80.png"/>
+          <img src="./src/images/logo_light80.png" alt="logo.png" class="logo image-light"/>
         </picture>
       </div>
       <div class="footer--social-links">
         <a href="">
-          <img src="src/images/icons/wsp_icon_dark.png" alt="social.png">
+          <img class="image-dark" src="./src/images/icons/wsp_icon_dark.png" alt="social.png" />
+          <img class="image-light" src="./src/images/icons/wsp_icon_light.png" alt="social.png" />
         </a>
         <a href="">
-          <img src="src/images/icons/linkedin_icon_dark.png" alt="social.png">
+          <img class="image-dark" src="./src/images/icons/linkedin_icon_dark.png" alt="social.png" />
+          <img class="image-light" src="./src/images/icons/linkedin_icon_light.png" alt="social.png" />
         </a>
         <a href="">
-          <img src="src/images/icons/git_icon_dark.png" alt="social.png">
+          <img class="image-dark" src="./src/images/icons/git_icon_dark.png" alt="social.png"/>
+          <img class="image-light" src="./src/images/icons/git_icon_light.png" alt="social.png"/>
         </a>
         <a href="">
-          <img src="src/images/icons/telegram_icon_dark.png" alt="social.png">
+          <img class="image-dark" src="./src/images/icons/telegram_icon_dark.png" alt="social.png" />
+          <img class="image-light" src="./src/images/icons/telegram_icon_light.png" alt="social.png" />
         </a>
         <a href="">
-          <img src="src/images/icons/ig_icon_dark.png" alt="social.png">
+          <img class="image-dark" src="./src/images/icons/ig_icon_dark.png" alt="social.png" />
+          <img class="image-light" src="./src/images/icons/ig_icon_light.png" alt="social.png" />
         </a>
         <a href="">
-          <img src="src/images/icons/tw_icon_dark.png" alt="social.png">
+          <img class="image-dark" src="./src/images/icons/tw_icon_dark.png" alt="social.png" />
+          <img class="image-light" src="./src/images/icons/tw_icon_light.png" alt="social.png" />
         </a>
       </div>
       <div class="copy">
         <span>&copy; Pablo Ortiz Gervilla 2022</span>
       </div>
     </footer>
-    
+    <!-- <div>
+      <img style="display: none;" src="./src/images/logo_light144.png" alt="">
+      <img style="display: none;" src="./src/images/logo_light104.png" alt="">
+      <img style="display: none;" src="./src/images/logo_light64.png" alt="">
+      <img style="display: none;" src="./src/images/logo_light80.png" alt="">
+      <img style="display: none;" src="./src/images/icons/tw_icon_light.png" alt="social.png" />
+      <img style="display: none;" src="./src/images/icons/ig_icon_light.png" alt="social.png" />
+      <img style="display: none;" src="./src/images/icons/telegram_icon_light.png" alt="social.png" />
+      <img style="display: none;" src="./src/images/icons/git_icon_light.png" alt="social.png"/>
+      <img style="display: none;" src="./src/images/icons/linkedin_icon_light.png" alt="social.png" />
+      <img style="display: none;" src="./src/images/icons/wsp_icon_light.png" alt="social.png" />
+    </div> -->
   </body>
 </html>

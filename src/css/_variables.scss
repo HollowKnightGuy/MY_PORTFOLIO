@@ -21,6 +21,7 @@
 	--dark-form-theme-color: #292728;
 
 	--dark-bg-color-scrollbar: #444143; 
+
 	
 	--dark-theme: #333032;
 	
@@ -41,7 +42,6 @@
 	--light-form-theme-color: rgb(231, 229, 230);
 
 	--light-bg-color-scrollbar: #cfc9cd; 
-
 
 
 	--light-theme: #f1f1f3;
@@ -66,6 +66,9 @@
 	--form-theme: var(--dark-form-theme-color);
 
 	--bg-color-scrollbar: var(--dark-bg-color-scrollbar); 
+
+	--display-picture-light: none;
+	--display-picture-dark: block;
 
 	--theme: var(--dark-theme);
 	--fs-300: 1rem;
