@@ -3,6 +3,8 @@
   --dark-text-color: #747072;
   --dark-2text-color: rgb(0, 0, 0);
   --dark-3text-color: #ffff;
+  --dark-gradient-h1: radial-gradient(circle at left, var(--maincolor), var(--theme));
+  --dark-gradient-h1skills: radial-gradient(circle at right, var(--maincolor), var(--theme));
   --dark-form-button-hover: rgb(245, 245, 245);
   --dark-form-info-color: black;
   --dark-form-theme-color: #292728;
@@ -15,9 +17,10 @@
   --light-text-color: #050A30;
   --light-2text-color: #050A30;
   --light-3text-color: #050A30;
+  --light-gradient-h1: none;
   --light-form-button-hover: black;
   --light-form-info-color: white;
-  --light-form-theme-color: rgb(211, 207, 209);
+  --light-form-theme-color: rgb(231, 229, 230);
   --light-seccolor: #FF7100;
   --light-seccolor-2: #FF7100;
   --light-neutralcolor: #fd7e16;
@@ -27,6 +30,8 @@
   --text-color: var(--dark-text-color);
   --text2-color: var(--dark-2text-color);
   --text3-color: var(--dark-3text-color);
+  --gradient-h1: var(--dark-gradient-h1);
+  --gradient-h1skills: var(--dark-gradient-h1skills);
   --form-button-hover: var(--dark-form-button-hover);
   --form-info-color: var(--dark-form-info-color);
   --form-theme: var(--dark-form-theme-color);
@@ -99,6 +104,8 @@ img {
   --text-color: var(--dark-text-color);
   --text2-color: var(--dark-2text-color);
   --text3-color: var(--dark-3text-color);
+  --gradient-h1: var(--dark-gradient-h1);
+  --gradient-h1skills: var(--dark-gradient-h1skill);
   --form-button-hover: var(--dark-form-button-hover);
   --form-info-color: var(--dark-form-info-color);
   --form-theme: var(--dark-form-theme-color);
@@ -114,6 +121,8 @@ img {
   --text-color: var(--light-text-color);
   --text2-color: var(--light-2text-color);
   --text3-color: var(--light-3text-color);
+  --gradient-h1: var(--light-gradient-h1);
+  --gradient-h1skills: var(--light-gradient-h1);
   --form-button-hover: var(--light-form-button-hover);
   --form-info-color: var(--light-form-info-color);
   --form-theme: var(--light-form-theme-color);
@@ -327,17 +336,6 @@ i {
   color: var(--maincolor) !important;
 }
 
-@media (min-width: 2000px) {
-  header {
-    height: 12rem;
-  }
-  i {
-    font-size: 3rem;
-  }
-  .logo {
-    width: 9rem;
-  }
-}
 @media (min-width: 1440px) {
   header {
     height: 8rem;
@@ -347,6 +345,17 @@ i {
   }
   .logo {
     width: 6.5rem;
+  }
+}
+@media (min-width: 2000px) {
+  header {
+    height: 12rem;
+  }
+  i {
+    font-size: 3rem;
+  }
+  .logo {
+    width: 9rem;
   }
 }
 @media (max-width: 950px) {
@@ -475,7 +484,6 @@ main {
 }
 
 .contact-form {
-  background: var(--theme);
   background-color: var(--form-theme);
 }
 .contact-form form {
@@ -572,8 +580,8 @@ main {
     grid-template-columns: 2fr 1fr;
   }
   .contact-info h4,
-.contact-info ul,
-.contact-info p {
+  .contact-info ul,
+  .contact-info p {
     text-align: left;
   }
 }
@@ -627,20 +635,24 @@ footer div a img {
   font-size: var(--fs-300);
 }
 
+@media (min-width: 1440px) {
+  footer {
+    position: absolute;
+    bottom: 0;
+  }
+  .footer--logo img {
+    width: 6.5rem;
+  }
+  footer div a img {
+    width: 3rem;
+  }
+}
 @media (min-width: 2000px) {
   .footer--logo img {
     width: 9rem;
   }
   footer div a img {
     width: 4rem;
-  }
-}
-@media (min-width: 1440px) {
-  .footer--logo img {
-    width: 6.5rem;
-  }
-  footer div a img {
-    width: 3rem;
   }
 }
 @media (max-width: 950px) {

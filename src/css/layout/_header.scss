@@ -154,18 +154,6 @@ i {
 }
 
 
-@media (min-width: 2000px) {
-	header {
-		height: 12rem;
-	}
-	i {
-		font-size: 3rem;
-	}
-	.logo {
-		width: 9rem;
-	}
-
-}
 
 
 @media (min-width: 1440px) {
@@ -180,6 +168,18 @@ i {
 	}
 }
 
+@media (min-width: 2000px) {
+	header {
+		height: 12rem;
+	}
+	i {
+		font-size: 3rem;
+	}
+	.logo {
+		width: 9rem;
+	}
+
+}
 
 @media (max-width: 950px) {
 	header {

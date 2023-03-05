@@ -68,25 +68,7 @@
 		transition: all 400ms;
 	}
 }
-@media (min-width: 2000px) {
 
-	
-	.home-bcilinder {
-		height: 52rem;
-	}
-	.home-scilinder {
-		height: 48rem;
-		right: 1.7vw;
-	}
-	.home-here-button {
-		position: relative;
-		bottom:.6rem;
-		padding:2rem 10rem;
-		border-radius: 1.4rem;
-	}
-	
-
-}
 @media (min-width: 1440px) {
 
 	.home-bcilinder {
@@ -102,6 +84,28 @@
 	}
 
 	
+	
+}
+
+
+@media (min-width: 2000px) {
+
+	
+	.home-bcilinder {
+		height: 48rem;
+	}
+	.home-scilinder {
+		height: 44rem;
+		right: 1.7vw;
+	}
+	.home-here-button {
+		position: relative;
+		bottom:.6rem;
+		padding:1.5rem 11rem;
+		border-radius: .7rem;
+	}
+	
+
 }
 @media (max-width: 950px) {
 
@@ -135,12 +139,6 @@
 	.home-here-button {
 		border-radius: 4px;
 		padding: .7rem 4rem;
-		background-color: var(--text3-color);
-		color: var(--theme);
-		&:hover {
-			background-color: var(--maincolor);
-			color: black;
-		}
 	}
 
 	.letter-p {

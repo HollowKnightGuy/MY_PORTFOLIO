@@ -6,6 +6,8 @@
 	--dark-text-color: #747072;
 	--dark-2text-color: rgb(0, 0, 0);
 	--dark-3text-color: #ffff;
+	--dark-gradient-h1: radial-gradient(circle at left, var(--maincolor), var(--theme));
+	--dark-gradient-h1skills: radial-gradient(circle at right, var(--maincolor), var(--theme));
 	--dark-form-button-hover: rgb(245, 245, 245); 
 	--dark-form-info-color: black;
 	--dark-form-theme-color: #292728;
@@ -21,9 +23,10 @@
 	--light-text-color: #050A30;
 	--light-2text-color: #050A30;
 	--light-3text-color: #050A30;
+	--light-gradient-h1: none;
 	--light-form-button-hover: black; 
 	--light-form-info-color: white; 
-	--light-form-theme-color: rgb(211, 207, 209);
+	--light-form-theme-color: rgb(231, 229, 230);
 	--light-seccolor: #FF7100;
 	--light-seccolor-2: #FF7100;
 	--light-neutralcolor: #fd7e16;
@@ -35,6 +38,8 @@
 	--text-color: var(--dark-text-color);
 	--text2-color: var(--dark-2text-color);
 	--text3-color: var(--dark-3text-color);
+	--gradient-h1: var(--dark-gradient-h1);
+	--gradient-h1skills: var(--dark-gradient-h1skills);
 	--form-button-hover: var(--dark-form-button-hover); 
 	--form-info-color: var(--dark-form-info-color); 
 	--form-theme: var(--dark-form-theme-color);

@@ -36,6 +36,32 @@ footer {
 
 
 
+
+
+@media (min-width: 1440px) {
+
+	footer{
+		position: absolute;
+		bottom: 0;
+	}
+
+	.footer--logo {
+		img {
+			width: 6.5rem;
+		}
+	}
+	footer {
+		div {
+			a {
+				img {
+					width: 3rem;
+				}
+			}
+		}
+	}
+}
+
+
 @media (min-width: 2000px) {
 	.footer--logo {
 		img {
@@ -52,24 +78,6 @@ footer {
 		}
 	}
 
-}
-
-
-@media (min-width: 1440px) {
-	.footer--logo {
-		img {
-			width: 6.5rem;
-		}
-	}
-	footer {
-		div {
-			a {
-				img {
-					width: 3rem;
-				}
-			}
-		}
-	}
 }
 
 
