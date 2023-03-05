@@ -26,9 +26,7 @@ header {
 		}
 	}
 }
-.logo {
-	width: 5rem;
-}
+
 .navbar-mine {
 	position: relative;
 	height: 100%;
@@ -163,9 +161,7 @@ i {
 	i {
 		font-size: 2rem;
 	}
-	.logo {
-		width: 6.5rem;
-	}
+
 }
 
 @media (min-width: 2000px) {
@@ -175,9 +171,7 @@ i {
 	i {
 		font-size: 3rem;
 	}
-	.logo {
-		width: 9rem;
-	}
+
 
 }
 
@@ -190,10 +184,7 @@ i {
 		}
 	}
 
-	
-	.logo {
-		width: 4rem;
-	}
+
 }
 
 
@@ -245,7 +236,6 @@ i {
 	.logo {
 		padding: 10px;
 		padding-left: 1.5rem;
-		width: 80px;
 	}
 	.navbar-mine {
 		width: 100%;

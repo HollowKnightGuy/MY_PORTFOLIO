@@ -71,6 +71,8 @@
 
 @media (min-width: 1440px) {
 
+
+
 	.home-bcilinder {
 		height: 35rem;
 	}
@@ -89,10 +91,14 @@
 
 
 @media (min-width: 2000px) {
-
+	:root{
+		--fs-600:4.5rem;
+		--fs-300:2rem;
+	}
 	
 	.home-bcilinder {
 		height: 48rem;
+		top: 10vh;
 	}
 	.home-scilinder {
 		height: 44rem;
@@ -103,6 +109,12 @@
 		bottom:.6rem;
 		padding:1.5rem 11rem;
 		border-radius: .7rem;
+	}
+
+	footer{
+		position: absolute;
+		bottom: 1rem;
+		
 	}
 	
 

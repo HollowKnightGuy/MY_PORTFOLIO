@@ -33,7 +33,13 @@
     <header>
       <div>
         <a href="../../index.html">
-          <img src="../images/logo_dark.png" alt="logo.png" class="logo">
+          <picture>
+            <source type="image/png" media="(min-width: 2000px)" srcset="../images/logo_dark144.png" />
+            <source type="image/png" media="(min-width: 1440px)" srcset="../images/logo_dark104.png" />
+            <source type="image/png" media="(max-width: 950px)" srcset="../images/logo_dark64.png" />
+            <source type="image/png" media="(max-width: 560px)" srcset="../images/logo_dark80.png" />
+            <img src="../images/logo_dark80.png" alt="logo.png" class="logo" />
+          </picture>
         </a>
         <h2>My <span>Portfolio</span></h2>
       </div>
@@ -87,7 +93,7 @@
                         <textarea id="messageinput" name="message" rows="3" onfocus="this.previousElementSibling.style.color = 'var(--maincolor)'"></textarea>
                     </p>
                     <p id="button">
-                        <button class="ov-btn-slide-right">
+                        <button class="submit-form">
                             SEND
                         </button>
                     </p>
@@ -119,7 +125,13 @@
       </main>
       <footer>
         <div class="footer--logo">
-          <img src="../images/logo_dark.png" alt="logo.png">
+          <picture>
+            <source type="image/png" media="(min-width: 2000px)" srcset="../images/logo_dark144.png" />
+            <source type="image/png" media="(min-width: 1440px)" srcset="../images/logo_dark104.png" />
+            <source type="image/png" media="(max-width: 950px)" srcset="../images/logo_dark64.png" />
+            <source type="image/png" media="(max-width: 560px)" srcset="../images/logo_dark80.png" />
+            <img src="../images/logo_dark80.png" alt="logo.png" class="logo" />
+          </picture>
         </div>
         <div class="footer--social-links">
           <a href="">
@@ -129,7 +141,7 @@
             <img src="../images/icons/linkedin_icon_dark.png" alt="social.png">
           </a>
           <a href="">
-            <img src="../images/icons/git_icon_dark.png" alt="social.png" id="git-image">
+            <img src="../images/icons/git_icon_dark.png" alt="social.png">
           </a>
           <a href="">
             <img src="../images/icons/telegram_icon_dark.png" alt="social.png">

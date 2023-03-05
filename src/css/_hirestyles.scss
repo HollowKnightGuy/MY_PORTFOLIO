@@ -104,7 +104,7 @@ main {
 #button {
 	grid-area: button;
 }
-.ov-btn-slide-right {
+.submit-form {
 	width: 100%;
 	background: var(--maincolor);
 	color: var(--form-info-color);
@@ -142,6 +142,14 @@ main {
 		-webkit-transition: all 0.35s;
 		transition: all 0.35s;
 	}
+}
+
+@media(min-width:2000px){
+	:root{
+		--fs-300:2rem;
+
+	}
+	
 }
 
 @media(min-width: 700px) {

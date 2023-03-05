@@ -3,45 +3,49 @@
   --dark-text-color: #747072;
   --dark-2text-color: rgb(0, 0, 0);
   --dark-3text-color: #ffff;
+  --dark-seccolor: #E77371;
+  --dark-seccolor-2: #c97270;
+  --dark-neutralcolor: #04c4cc;
+  --dark-neutralcolor-2: #609C9C;
   --dark-gradient-h1: radial-gradient(circle at left, var(--maincolor), var(--theme));
+  --dark-career-bg: linear-gradient(to top, var(--seccolor-2),var(--seccolor-2), var(--theme));
+  --dark-description-bg: linear-gradient(to bottom, var(--neutralcolor-2),var(--neutralcolor-2), var(--theme));
   --dark-gradient-h1skills: radial-gradient(circle at right, var(--maincolor), var(--theme));
   --dark-form-button-hover: rgb(245, 245, 245);
   --dark-form-info-color: black;
   --dark-form-theme-color: #292728;
   --dark-bg-color-scrollbar: #444143;
-  --dark-seccolor: #E77371;
-  --dark-seccolor-2: #c97270;
-  --dark-neutralcolor: #04c4cc;
-  --dark-neutralcolor-2: #609C9C;
   --dark-theme: #333032;
   --light-maincolor: #008EFF;
   --light-text-color: #050A30;
   --light-2text-color: #050A30;
   --light-3text-color: #050A30;
+  --light-seccolor: #FF7100;
+  --light-seccolor-2: #FF7100;
+  --light-neutralcolor: #fd7e16;
+  --light-neutralcolor-2: #008EFF;
   --light-gradient-h1: none;
   --light-form-button-hover: black;
   --light-form-info-color: white;
   --light-form-theme-color: rgb(231, 229, 230);
   --light-bg-color-scrollbar: #cfc9cd;
-  --light-seccolor: #FF7100;
-  --light-seccolor-2: #FF7100;
-  --light-neutralcolor: #fd7e16;
-  --light-neutralcolor-2: #008EFF;
   --light-theme: #f1f1f3;
   --maincolor: var(--dark-maincolor);
   --text-color: var(--dark-text-color);
   --text2-color: var(--dark-2text-color);
   --text3-color: var(--dark-3text-color);
+  --seccolor: var(--dark-seccolor);
+  --seccolor-2: var(--dark-seccolor-2);
+  --neutralcolor: var(--dark-neutralcolor);
+  --neutralcolor-2: var(--dark-neutralcolor-2);
   --gradient-h1: var(--dark-gradient-h1);
+  --career-bg:var(--dark-career-bg);
+  --description-bg:var(--dark-description-bg);
   --gradient-h1skills: var(--dark-gradient-h1skills);
   --form-button-hover: var(--dark-form-button-hover);
   --form-info-color: var(--dark-form-info-color);
   --form-theme: var(--dark-form-theme-color);
   --bg-color-scrollbar: var(--dark-bg-color-scrollbar);
-  --seccolor: var(--dark-seccolor);
-  --seccolor-2: var(--dark-seccolor-2);
-  --neutralcolor: var(--dark-neutralcolor);
-  --neutralcolor-2: var(--dark-neutralcolor-2);
   --theme: var(--dark-theme);
   --fs-300: 1rem;
   --fs-400: 2rem;
@@ -108,15 +112,17 @@ img {
   --text2-color: var(--dark-2text-color);
   --text3-color: var(--dark-3text-color);
   --gradient-h1: var(--dark-gradient-h1);
+  --seccolor: var(--dark-seccolor);
+  --seccolor-2: var(--dark-seccolor-2);
+  --neutralcolor: var(--dark-neutralcolor);
+  --neutralcolor-2: var(--dark-neutralcolor-2);
+  --career-bg: var(--dark-career-bg);
+  --description-bg: var(--dark-description-bg);
   --gradient-h1skills: var(--dark-gradient-h1skill);
   --form-button-hover: var(--dark-form-button-hover);
   --form-info-color: var(--dark-form-info-color);
   --form-theme: var(--dark-form-theme-color);
   --bg-color-scrollbar: var(--dark-bg-color-scrollbar);
-  --seccolor: var(--dark-seccolor);
-  --seccolor-2: var(--dark-seccolor-2);
-  --neutralcolor: var(--dark-neutralcolor);
-  --neutralcolor-2: var(--dark-neutralcolor-2);
   --theme: var(--dark-theme);
 }
 
@@ -125,17 +131,19 @@ img {
   --text-color: var(--light-text-color);
   --text2-color: var(--light-2text-color);
   --text3-color: var(--light-3text-color);
-  --gradient-h1: var(--light-gradient-h1);
-  --gradient-h1skills: var(--light-gradient-h1);
-  --color-scrollbar: var(--light-color-scrollbar);
-  --bg-color-scrollbar: var(--light-bg-color-scrollbar);
-  --form-button-hover: var(--light-form-button-hover);
-  --form-info-color: var(--light-form-info-color);
-  --form-theme: var(--light-form-theme-color);
   --seccolor: var(--light-seccolor);
   --seccolor-2: var(--light-seccolor-2);
   --neutralcolor: var(--light-neutralcolor);
   --neutralcolor-2: var(--light-neutralcolor-2);
+  --career-bg: var(--seccolor);
+  --description-bg: var(--maincolor);
+  --gradient-h1: var(--light-gradient-h1);
+  --gradient-h1skills: var(--light-gradient-h1);
+  --form-button-hover: var(--light-form-button-hover);
+  --form-info-color: var(--light-form-info-color);
+  --form-theme: var(--light-form-theme-color);
+  --color-scrollbar: var(--light-color-scrollbar);
+  --bg-color-scrollbar: var(--light-bg-color-scrollbar);
   --theme: var(--light-theme);
 }
 
@@ -238,10 +246,6 @@ header h2 {
 }
 header h2 span {
   color: var(--maincolor);
-}
-
-.logo {
-  width: 5rem;
 }
 
 .navbar-mine {
@@ -374,9 +378,6 @@ i {
   i {
     font-size: 2rem;
   }
-  .logo {
-    width: 6.5rem;
-  }
 }
 @media (min-width: 2000px) {
   header {
@@ -385,16 +386,10 @@ i {
   i {
     font-size: 3rem;
   }
-  .logo {
-    width: 9rem;
-  }
 }
 @media (max-width: 950px) {
   header div h2 {
     font-weight: var(--fw-400);
-  }
-  .logo {
-    width: 4rem;
   }
 }
 @media (max-width: 675px) {
@@ -437,7 +432,6 @@ i {
   .logo {
     padding: 10px;
     padding-left: 1.5rem;
-    width: 80px;
   }
   .navbar-mine {
     width: 100%;
@@ -567,7 +561,7 @@ main {
   grid-area: button;
 }
 
-.ov-btn-slide-right {
+.submit-form {
   width: 100%;
   background: var(--maincolor);
   color: var(--form-info-color);
@@ -581,18 +575,18 @@ main {
   transition: all 400ms;
   font-weight: var(--fw-600);
 }
-.ov-btn-slide-right:hover {
+.submit-form:hover {
   letter-spacing: 8px;
   transition: all 400ms;
 }
-.ov-btn-slide-right:hover::after {
+.submit-form:hover::after {
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
   transition: all 0.35s;
 }
-.ov-btn-slide-right::after {
+.submit-form::after {
   content: "";
   background: var(--form-button-hover);
   position: absolute;
@@ -605,6 +599,11 @@ main {
   transition: all 0.35s;
 }
 
+@media (min-width: 2000px) {
+  :root {
+    --fs-300:2rem;
+  }
+}
 @media (min-width: 700px) {
   .contact-wrapper {
     display: grid;
@@ -635,7 +634,8 @@ main {
 footer {
   width: 100vw;
   height: 15rem;
-  margin-top: 2rem;
+  margin-top: 6rem;
+  margin-bottom: 4rem;
   text-align: center;
   display: flex;
   justify-content: space-around;
@@ -652,42 +652,18 @@ footer div a img {
   color: var(--text-color);
 }
 
-.footer--logo img {
-  width: 5rem;
-}
-
-#git-image {
-  width: 1.6rem;
-  padding: 0.2rem;
-}
-
 .copy {
   color: var(--text3-color);
   font-size: var(--fs-300);
 }
 
 @media (min-width: 1440px) {
-  footer {
-    position: absolute;
-    bottom: 0;
-  }
-  .footer--logo img {
-    width: 6.5rem;
-  }
   footer div a img {
     width: 3rem;
   }
 }
 @media (min-width: 2000px) {
-  .footer--logo img {
-    width: 9rem;
-  }
   footer div a img {
-    width: 4rem;
-  }
-}
-@media (max-width: 950px) {
-  .footer--logo {
     width: 4rem;
   }
 }/*# sourceMappingURL=hire.css.map */

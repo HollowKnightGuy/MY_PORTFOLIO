@@ -1,119 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <script type="module" src="../../node_modules/bootstrap/dist/js/bootstrap.min.js" defer></script>
-    <link type="text/css" rel="stylesheet" href="../../node_modules/aos/dist/aos.css">
-    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/about.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <script type="module" src="../../node_modules/bootstrap/dist/js/bootstrap.min.js" defer></script>
+  <link type="text/css" rel="stylesheet" href="../../node_modules/aos/dist/aos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../css/about.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
 
-    <title>Portfolio - About Me </title>
-  </head>
-  <body>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="../js/main.js" defer></script>
-    <header>
-        <div>
-          <a href="../../index.html">
-            <img src="../images/logo_dark.png" alt="logo.png" class="logo">
-          </a>
-          <h2>My <span>Portfolio</span></h2>
-        </div>
-  
-        <nav class="navbar-mine">
-          <ul class="menu-mine">
-            <li>
-              <a class="navbar--links-mine underline" href="../../index.html">HOME</a>
-            </li>
-            <li>
-              <a class="navbar--links-mine underline" href="about.html">ABOUT ME</a>
-            </li>
-            <li>
-              <a class="navbar--links-mine hire-me underline underline--hire" href="hire.html">HIRE ME</a>
-            </li>
-  
-            <li>
-              <i class="bi-brightness-high-fill" id="toggleDark"></i>
-            </li>
-          </ul>
-          <div class="toggle">
-            <span class="linea-toggle"></span>
-            <span class="linea-toggle"></span>
-            <span class="linea-toggle"></span>
-          </div>
-        </nav>
-      </header>
+  <title>Portfolio - About Me</title>
+</head>
+
+<body>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="../js/main.js" defer></script>
+  <header >
+    <div>
+      <a href="../../index.html">
+        <picture>
+          <source type="image/png" media="(min-width: 2000px)" srcset="../images/logo_dark144.png" />
+          <source type="image/png" media="(min-width: 1440px)" srcset="../images/logo_dark104.png" />
+          <source type="image/png" media="(max-width: 950px)" srcset="../images/logo_dark64.png" />
+          <source type="image/png" media="(max-width: 560px)" srcset="../images/logo_dark80.png" />
+          <img src="../images/logo_dark80.png" alt="logo.png" class="logo" />
+        </picture>
+      </a>
+      <h2>My <span>Portfolio</span></h2>
+    </div>
+
+    <nav class="navbar-mine">
+      <ul class="menu-mine">
+        <li>
+          <a class="navbar--links-mine underline" href="../../index.html">HOME</a>
+        </li>
+        <li>
+          <a class="navbar--links-mine underline" href="about.html">ABOUT ME</a>
+        </li>
+        <li>
+          <a class="navbar--links-mine hire-me underline underline--hire" href="hire.html">HIRE ME</a>
+        </li>
+
+        <li>
+          <i class="bi-brightness-high-fill" id="toggleDark"></i>
+        </li>
+      </ul>
+      <div class="toggle">
+        <span class="linea-toggle"></span>
+        <span class="linea-toggle"></span>
+        <span class="linea-toggle"></span>
+      </div>
+    </nav>
+  </header>
   <div class="body_aboutme">
-
     <section class="about-section">
-      <div class="h1darkabout" data-aos="fade-right" data-aos-duration="1000" >
-        <h1 class="h1about h1about--right" >About Me</h1>
+      <div class="h1darkabout" data-aos="fade-right" data-aos-duration="1000">
+        <h1 class="h1about h1about--right">About Me</h1>
       </div>
       <div class="about">
         <article data-aos="fade-up" data-aos-duration="1100">
-            <div class="career">
-              <div class="stage" data-aos="fade-right" data-aos-duration="1100"  data-aos-delay="300">
-                <img src="../images/libros.png" alt="stage.jpg" class="stage-img">
-                <span class="stage-description">Bachelor of Science graduate</span>
-              </div>
-              <div class="stage stage--left" data-aos="fade-left" data-aos-duration="1100"  data-aos-delay="400">
-                <img src="../images/graduation_cap.png" alt="stage.jpg" class="stage-img">
-                <span class="stage-description">Graduated in Web Application Development</span>
-              </div>
-              <div class="stage stage" data-aos="fade-right" data-aos-duration="1100"  data-aos-delay="500">
-                <img src="../images/earth_picture.png" alt="stage.jpg" class="stage-img">
-                <span class="stage-description">Work experience abroad</span>
-              </div>
+          <div class="career">
+            <div class="stage" data-aos="fade-right" data-aos-duration="1100" data-aos-delay="300">
+              <img src="../images/libros.png" alt="stage.jpg" class="stage-img" />
+              <span class="stage-description">Bachelor of Science graduate</span>
             </div>
+            <div class="stage stage--left" data-aos="fade-left" data-aos-duration="1100" data-aos-delay="400">
+              <img src="../images/graduation_cap.png" alt="stage.jpg" class="stage-img" />
+              <span class="stage-description">Graduated in Web Application Development</span>
+            </div>
+            <div class="stage stage" data-aos="fade-right" data-aos-duration="1100" data-aos-delay="500">
+              <img src="../images/earth_picture.png" alt="stage.jpg" class="stage-img" />
+              <span class="stage-description">Work experience abroad</span>
+            </div>
+          </div>
         </article>
         <article>
-            <div class="about--description">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam corrupti maiores consequatur doloremque temporibus corporis, voluptatem facere dicta, distinctio rem, quasi laboriosam doloribus aliquid a repudiandae labore? Aliquam, ab numquam?
-                <br><br>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam corrupti maiores consequatur doloremque temporibus corporis, voluptatem facere dicta, distinctio rem, quasi laboriosam doloribus aliquid a repudiandae labore? Aliquam, ab numquam?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eligendi quibusdam totam minima quaerat, neque ipsa deleniti 
-
-            </div>
+          <div class="about--description" data-aos="fade-down" data-aos-duration="700">
+            My name is Pablo Ortiz, I am from Granada, Spain. 
+            <br><br>
+            Throughout my academic training, I have completed a technological baccalaureate at the IES Mariana Pineda. After this course, I enrolled in the Higher Degree of Web Application Development at the Francisco Ayala educational center.
+            <br><br>
+            Regarding labor training, I have completed 3 months in Berlin, Germany, doing company internships at FormBlitz, a company in which I mainly worked with Back-End programming.
+          </div>
         </article>
       </div>
       <article class="about-responsive-article">
         <div class="about-responsive">
-          <div class="maincont"  data-aos="fade-right" data-aos-duration="400">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam corrupti maiores consequatur doloremque temporibus corporis, voluptatem facere dicta, distinctio rem, quasi laboriosam doloribus aliquid a repudiandae labore? Aliquam, ab numquam?
+          <div class="maincont" data-aos="fade-right" data-aos-duration="400">
+            My name is Pablo Ortiz, I am from Granada, Spain. 
             <br><br>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam corrupti maiores consequatur doloremque temporibus corporis, voluptatem facere dicta, distinctio rem, quasi laboriosam doloribus aliquid a repudiandae labore? Aliquam, ab numquam?
-            Lorem ipsum dolor sit amet consectetur adipisicing 
+            Throughout my academic training, I have completed a technological baccalaureate at the IES Mariana Pineda. After this course, I enrolled in the Higher Degree of Web Application Development at the Francisco Ayala educational center.
+            <br><br>
+            Regarding labor training, I have completed 3 months in Berlin, Germany, doing company internships at FormBlitz, a company in which I mainly worked with Back-End programming.
           </div>
           <div class="decorationcont" data-aos="fade-left" data-aos-duration="400" data-aos-delay="200"></div>
         </div>
         <div class="career-responsive">
-          <h2 class="h2about" data-aos="fade-right" data-aos-duration="500" data-aos-delay="200">My Trayectory </h2>
+          <h2 class="h2about" data-aos="fade-right" data-aos-duration="500" data-aos-delay="200">
+            My Trayectory
+          </h2>
           <div class="career-container" data-aos="fade-up" data-aos-duration="700">
             <div class="stage stage-responsive">
-              <img src="../images/libros.png" alt="stage.jpg" class="stage-img">
+              <picture>
+                <source type="image/png" media="(max-width: 1000px)" srcset="../images/libros80.png" />
+                <source type="image/png" media="(max-width: 680px)" srcset="../images/libros60.png" />
+                <img src="../images/libros.png" alt="stage.jpg" class="stage-img" />
+              </picture>
               <span>Bachelor of Science graduate</span>
             </div>
             <div class="stage stage-responsive">
-              <img src="../images/graduation_cap.png" alt="stage.jpg" class="stage-img">
+              <picture>
+                <source type="image/png" media="(max-width: 1000px)" srcset="../images/graduation_cap80.png" />
+                <source type="image/png" media="(max-width: 680px)" srcset="../images/graduation_cap60.png" />
+                <img src="../images/graduation_cap.png" alt="stage.jpg" class="stage-img" />
+              </picture>
               <span>Graduated in Web Application Development</span>
             </div>
             <div class="stage stage-responsive">
-              <img src="../images/earth_picture.png" alt="stage.jpg" class="stage-img"> 
+              <picture>
+                <source type="image/png" media="(max-width: 1000px)" srcset="../images/earth_picture80.png" />
+                <source type="image/png" media="(max-width:680px)" srcset="../images/earth_picture60.png" />
+                <img src="../images/earth_picture.png" alt="stage.jpg" class="stage-img" />
+              </picture>
               <span>Work experience abroad</span>
             </div>
           </div>
-        </div>
         </div>
       </article>
     </section>
@@ -121,184 +148,220 @@
       <div class="h1darkabout h1darkaboutskills" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
         <h1 class="h1about h1about--right">Skills</h1>
       </div>
-        <article class="skills-article">
-            <h2 class="h2about h2aboutskills" data-aos="fade-right" data-aos-duration="400" >Main Abilities</h2>
-            <div class="container-mine">
-                <div class="barra" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
-                    <div class="fillcontainer fillcont1" >
-
-                        <div class="wave"></div>
-                        <div class="wave"></div>
-                        <div class="wave"></div>
-                        <div class="wave"></div>
-                      </div>
-                      <img src="../images/icons/languages_icons/html5.png" alt="programin_lang.png ">
-                </div>
-                <div class="barra barra1" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="700">
-                    <div class="fillcontainer fillcont2">
-
-                        <div class="wave"></div>
-                        <div class="wave"></div>
-                        <div class="wave"></div>
-                        <div class="wave"></div>
-                      </div>
-                      <img src="../images/icons/languages_icons/css.png" alt="programin_lang.png ">
-                </div>
-                <div class="barra barra2" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1000">
-                    <div class="fillcontainer fillcont3">
-
-                        <div class="wave"></div>
-                        <div class="wave"></div>
-                        <div class="wave"></div>
-                        <div class="wave"></div>
-                      </div>
-                      <img src="../images/icons/languages_icons/js.png" alt="programin_lang.png ">
-                </div>
-                <div class="barra barra3" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1300">
-                    <div class="fillcontainer fillcont4">
-
-                        <div class="wave"></div>
-                        <div class="wave"></div>
-                        <div class="wave"></div>
-                        <div class="wave"></div>
-                      </div>
-                      <img src="../images/icons/languages_icons/php.png" alt="programin_lang.png ">
-                </div>
-                <div class="barra barra4  " data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1600">
-                    <div class="fillcontainer fillcont5">
-
-                        <div class="wave"></div>
-                        <div class="wave"></div>
-                        <div class="wave"></div>
-                        <div class="wave"></div>
-                      </div>
-                      <img src="../images/icons/languages_icons/python.png" alt="programin_lang.png ">
-                </div>
+      <article class="skills-article">
+        <h2 class="h2about h2aboutskills" data-aos="fade-right" data-aos-duration="400">
+          Main Abilities
+        </h2>
+        <div class="container-mine">
+          <div class="barra" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
+            <div class="fillcontainer fillcont1">
+              <div class="wave"></div>
+              <div class="wave"></div>
+              <div class="wave"></div>
+              <div class="wave"></div>
             </div>
-            <div class="abilities-responsive">
-              <div class="abilitie" data-aos="fade-right" data-aos-duration="500" data-aos-delay="100">
-                <span>HTML</span>
-                <div class="abilitie--bar rhtml"></div>
-              </div>
-              <div class="abilitie" data-aos="fade-right" data-aos-duration="500" data-aos-delay="200">
-                <span>CSS</span>
-                <div class="abilitie--bar rcss"></div>
-              </div>
-              <div class="abilitie" data-aos="fade-right" data-aos-duration="500" data-aos-delay="300">
-                <span>JS</span>
-                <div class="abilitie--bar rjs"></div>
-              </div>
-              <div class="abilitie" data-aos="fade-right" data-aos-duration="500" data-aos-delay="400">
-                <span>PHP</span>
-                <div class="abilitie--bar rphp"></div>
-              </div>
-              <div class="abilitie" data-aos="fade-right" data-aos-duration="500" data-aos-delay="500">
-                <span>PYTHON</span>
-                <div class="abilitie--bar rpython"></div>
-              </div>
+            <picture>
+              <source type="image/png" media="(max-width: 2000px)" srcset="../images/icons/languages_icons/html5112.png" />
+              <source type="image/png" media="(max-width: 680px)" srcset="../images/icons/languages_icons/html580.png" />
+              <img src="../images/icons/languages_icons/html5.png" alt="programin_lang.png"/>
+            </picture>
+          </div>
+          <div class="barra barra1" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="700">
+            <div class="fillcontainer fillcont2">
+              <div class="wave"></div>
+              <div class="wave"></div>
+              <div class="wave"></div>
+              <div class="wave"></div>
             </div>
-        </article>
-        <article>
-            <h2 class="h2about h2languages" data-aos="fade-left" data-aos-duration="400" >Languages</h2>
-            <div class="languageskills" >
-              <h3 class="h3languages" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">English</h3>
-              <div id="english-level" class="lang-bars1 english-level" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
-                <div class="english-fill"></div>
-              </div>
-              <h3 class="h3languages" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">Spanish</h3>
-              <div id="spanish-level" class="lang-bars2 spanish-level" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
-                <div class="spanish-fill"></div>
-              </div>
+            <picture>
+              <source type="image/png" media="(max-width: 2000px)" srcset="../images/icons/languages_icons/css112.png" />
+              <source type="image/png" media="(max-width: 680px)" srcset="../images/icons/languages_icons/css80.png" />
+              <img src="../images/icons/languages_icons/css.png" alt="programin_lang.png"/>
+            </picture>
+          </div>
+
+          <div class="barra barra2" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1000">
+            <div class="fillcontainer fillcont3">
+              <div class="wave"></div>
+              <div class="wave"></div>
+              <div class="wave"></div>
+              <div class="wave"></div>
             </div>
-        </article>
+            <picture>
+              <source type="image/png" media="(max-width: 2000px)" srcset="../images/icons/languages_icons/js112.png" />
+              <source type="image/png" media="(max-width: 680px)" srcset="../images/icons/languages_icons/js80.png" />
+              <img src="../images/icons/languages_icons/js.png" alt="programin_lang.png"/>
+            </picture>
+          </div>
+          <div class="barra barra3" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1300">
+            <div class="fillcontainer fillcont4">
+              <div class="wave"></div>
+              <div class="wave"></div>
+              <div class="wave"></div>
+              <div class="wave"></div>
+            </div>
+            <picture>
+              <source type="image/png" media="(max-width: 2000px)" srcset="../images/icons/languages_icons/php112.png" />
+              <source type="image/png" media="(max-width: 680px)" srcset="../images/icons/languages_icons/php80.png" />
+              <img src="../images/icons/languages_icons/php.png" alt="programin_lang.png"/>
+            </picture>
+          </div>
+          <div class="barra barra4" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1600">
+            <div class="fillcontainer fillcont5">
+              <div class="wave"></div>
+              <div class="wave"></div>
+              <div class="wave"></div>
+              <div class="wave"></div>
+            </div>
+            <picture>
+              <source type="image/png" media="(max-width: 2000px)" srcset="../images/icons/languages_icons/python112.png" />
+              <source type="image/png" media="(max-width: 680px)" srcset="../images/icons/languages_icons/python80.png" />
+              <img src="../images/icons/languages_icons/python.png" alt="programin_lang.png " />
+            </picture>
+          </div>
+        </div>
+        <div class="abilities-responsive">
+          <div class="abilitie" data-aos="fade-right" data-aos-duration="500" data-aos-delay="100">
+            <span>HTML</span>
+            <div class="abilitie--bar rhtml"></div>
+          </div>
+          <div class="abilitie" data-aos="fade-right" data-aos-duration="500" data-aos-delay="200">
+            <span>CSS</span>
+            <div class="abilitie--bar rcss"></div>
+          </div>
+          <div class="abilitie" data-aos="fade-right" data-aos-duration="500" data-aos-delay="300">
+            <span>JS</span>
+            <div class="abilitie--bar rjs"></div>
+          </div>
+          <div class="abilitie" data-aos="fade-right" data-aos-duration="500" data-aos-delay="400">
+            <span>PHP</span>
+            <div class="abilitie--bar rphp"></div>
+          </div>
+          <div class="abilitie" data-aos="fade-right" data-aos-duration="500" data-aos-delay="500">
+            <span>PYTHON</span>
+            <div class="abilitie--bar rpython"></div>
+          </div>
+        </div>
+      </article>
+      <article>
+        <h2 class="h2about h2languages" data-aos="fade-left" data-aos-duration="400">
+          Languages
+        </h2>
+        <div class="languageskills">
+          <h3 class="h3languages" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
+            English
+          </h3>
+          <div id="english-level" class="lang-bars1 english-level" data-aos="fade-right" data-aos-duration="1000"
+            data-aos-delay="100">
+            <div class="english-fill"></div>
+          </div>
+          <h3 class="h3languages" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
+            Spanish
+          </h3>
+          <div id="spanish-level" class="lang-bars2 spanish-level" data-aos="fade-right" data-aos-duration="1000"
+            data-aos-delay="100">
+            <div class="spanish-fill"></div>
+          </div>
+        </div>
+      </article>
     </section>
     <section>
       <div class="h1darkabout h1darkaboutprojects" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
         <h1 class="h1about h1about--left">Projects</h1>
-        
       </div>
-      <div class="carousel-container" style="height: 100%;">
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up" data-aos-duration="500" data-aos-delay="700">
+      <div class="carousel-container" style="height: 100%">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up"
+          data-aos-duration="500" data-aos-delay="700">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <a href="https://github.com/HollowKnightGuy/PROYECTO_SENDERISMO_PHP" target="_blank" class="projectGit">
                 <picture>
-                  <source type="image/png"  media="(min-width: 2000px)" srcset="../images/senderismo-iconorigin40per.png"/>
-                  <source type="image/png"  media="(min-width: 1200px)" srcset="../images/senderismo-iconorigin30per.png"/>
-                  <source type="image/png"  media="(min-width: 500px)" srcset="../images/senderismo-iconorigin20per.png"/>
-                  <source type="image/png"  media="(min-width: 200px)" srcset="../images/senderismo-iconorigin10per.png"/>
-                  <img src="../images/senderismo-iconorigin20per.png" class="mx-auto" alt="...">
+                  <source type="image/png" media="(min-width: 2000px)"
+                    srcset="../images/senderismo-iconorigin40per.png" />
+                  <source type="image/png" media="(min-width: 1200px)"
+                    srcset="../images/senderismo-iconorigin30per.png" />
+                  <source type="image/png" media="(min-width: 500px)"
+                    srcset="../images/senderismo-iconorigin20per.png" />
+                  <source type="image/png" media="(min-width: 200px)"
+                    srcset="../images/senderismo-iconorigin10per.png" />
+                  <img src="../images/senderismo-iconorigin20per.png" class="mx-auto" alt="..." />
                 </picture>
               </a>
-
             </div>
             <div class="carousel-item">
               <a href="https://github.com/HollowKnightGuy/ARTIC_SHOP" target="_blank" class="projectGit">
                 <picture>
-                  <source type="image/png"  media="(min-width: 2000px)" srcset="../images/artic-icon-origin40per.png"/>
-                  <source type="image/png"  media="(min-width: 1200px)" srcset="../images/artic-icon-origin30per.png"/>
-                  <source type="image/png"  media="(min-width: 500px)" srcset="../images/artic-icon-origin20per.png"/>
-                  <source type="image/png"  media="(min-width: 200px)" srcset="../images/artic-icon-origin10per.png"/>
-                  <img src="../images/artic-icon-origin20per.png" class="mx-auto"  style="border-radius:50% ;"   alt="...">
+                  <source type="image/png" media="(min-width: 2000px)" srcset="../images/artic-icon-origin40per.png" />
+                  <source type="image/png" media="(min-width: 1200px)" srcset="../images/artic-icon-origin30per.png" />
+                  <source type="image/png" media="(min-width: 500px)" srcset="../images/artic-icon-origin20per.png" />
+                  <source type="image/png" media="(min-width: 200px)" srcset="../images/artic-icon-origin10per.png" />
+                  <img src="../images/artic-icon-origin20per.png" class="mx-auto" style="border-radius: 50%"
+                    alt="..." />
                 </picture>
               </a>
-
             </div>
             <div class="carousel-item">
-              <a href="https://github.com/HollowKnightGuy/ROCK_PAPER_SCISSORS_LIZARD_SPOCK" target="_blank" class="projectGit">
+              <a href="https://github.com/HollowKnightGuy/ROCK_PAPER_SCISSORS_LIZARD_SPOCK" target="_blank"
+                class="projectGit">
                 <picture>
-                  <source type="image/png"  media="(min-width: 2000px)" srcset="../images/rps-iconorigin40per.png"/>
-                  <source type="image/png"  media="(min-width: 1200px)" srcset="../images/rps-iconorigin30per.png"/>
-                  <source type="image/png"  media="(min-width: 500px)" srcset="../images/rps-iconorigin20per.png"/>
-                  <source type="image/png"  media="(min-width: 200px)" srcset="../images/rps-iconorigin10per.png"/>
-                  <img src="../images/rps-iconorigin20per.png" class="mx-auto" alt="...">
+                  <source type="image/png" media="(min-width: 2000px)" srcset="../images/rps-iconorigin40per.png" />
+                  <source type="image/png" media="(min-width: 1200px)" srcset="../images/rps-iconorigin30per.png" />
+                  <source type="image/png" media="(min-width: 500px)" srcset="../images/rps-iconorigin20per.png" />
+                  <source type="image/png" media="(min-width: 200px)" srcset="../images/rps-iconorigin10per.png" />
+                  <img src="../images/rps-iconorigin20per.png" class="mx-auto" alt="..." />
                 </picture>
               </a>
-
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Anterior</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Siguiente</span>
           </button>
         </div>
       </div>
-      
     </section>
   </div>
 
-    <footer>
-        <div class="footer--logo">
-          <img src="../images/logo_dark.png" alt="logo.png">
-        </div>
-        <div class="footer--social-links">
-          <a href="">
-            <img src="../images/icons/wsp_icon_dark.png" alt="social.png">
-          </a>
-          <a href="">
-            <img src="../images/icons/linkedin_icon_dark.png" alt="social.png">
-          </a>
-          <a href="">
-            <img src="../images/icons/git_icon_dark.png" alt="social.png" id="git-image">
-          </a>
-          <a href="">
-            <img src="../images/icons/telegram_icon_dark.png" alt="social.png">
-          </a>
-          <a href="">
-            <img src="../images/icons/ig_icon_dark.png" alt="social.png">
-          </a>
-          <a href="">
-            <img src="../images/icons/tw_icon_dark.png" alt="social.png">
-          </a>
-        </div>
-        <div class="copy">
-          <span>&copy; Pablo Ortiz Gervilla 2022</span>
-        </div>
-      </footer>
-      
+  <footer>
+    <div class="footer--logo">
+      <picture>
+        <source type="image/png" media="(min-width: 2000px)" srcset="../images/logo_dark144.png" />
+        <source type="image/png" media="(min-width: 1440px)" srcset="../images/logo_dark104.png" />
+        <source type="image/png" media="(max-width: 950px)" srcset="../images/logo_dark64.png" />
+        <source type="image/png" media="(max-width: 560px)" srcset="../images/logo_dark80.png" />
+        <img src="../images/logo_dark80.png" alt="logo.png" class="logo" />
+      </picture>
+    </div>
+    <div class="footer--social-links">
+      <a href="">
+        <img src="../images/icons/wsp_icon_dark.png" alt="social.png" />
+      </a>
+      <a href="">
+        <img src="../images/icons/linkedin_icon_dark.png" alt="social.png" />
+      </a>
+      <a href="">
+        <img src="../images/icons/git_icon_dark.png" alt="social.png"/>
+      </a>
+      <a href="">
+        <img src="../images/icons/telegram_icon_dark.png" alt="social.png" />
+      </a>
+      <a href="">
+        <img src="../images/icons/ig_icon_dark.png" alt="social.png" />
+      </a>
+      <a href="">
+        <img src="../images/icons/tw_icon_dark.png" alt="social.png" />
+      </a>
+    </div>
+    <div class="copy">
+      <span>&copy; Pablo Ortiz Gervilla 2022</span>
+    </div>
+  </footer>
 </body>
+
 </html>
