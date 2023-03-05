@@ -1,3 +1,5 @@
+// GENERAL VARIABLES FOR THE PAGE
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -45,7 +47,7 @@ img {
 	display: block;
 }
 
-
+// STYLES THAT MAKE ABLE TO CHANGE THE COLORS BETWEEN LIGHT AND DARK THEM
 
 .dark-theme {
 	--maincolor: var(--dark-maincolor);
@@ -103,7 +105,7 @@ img {
 	--theme: var(--light-theme);
 }
 
-
+// STYLES OF THE SCROLLBAR
 
 ::-webkit-scrollbar {
 	width: 10px;

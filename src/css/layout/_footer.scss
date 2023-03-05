@@ -1,3 +1,5 @@
+// STYLES OF THE FOOTER ITSELF
+
 footer {
 	width: 100vw;
 	height: 15rem;
@@ -18,12 +20,15 @@ footer {
 	}
 }
 
+// STYLES OF THE SOCIAL LINKS
+
 .footer--social-links {
 	display: flex;
 	align-items: center;
 	color: var(--text-color);
 }
 
+// STYLES FOR THE COPYRIGHT SIGN
 
 .copy {
 	color: var(--text3-color);

@@ -15,43 +15,7 @@ main {
 	padding: 1.5em;
 }
 
-.contact-info {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	font-weight: var(--fw-600);
-	gap: 1rem;
-	background: var(--maincolor);
-}
-
-.contact-info--ul {
-	color: var(--form-info-color);
-	display: flex;
-	flex-direction: column;
-	gap: 2rem;
-	list-style: none;
-	padding: 0;
-
-	li {
-		display: flex;
-		gap: 1rem;
-		margin: auto;
-	}
-}
-
-.contacttitle {
-	text-align: center;
-	width: 100%;
-	font-size: var(--fs-600);
-	margin: 2rem 0;
-	font-weight: var(--fw-600);
-	color: var(--text3-color);
-
-	span {
-		color: var(--maincolor);
-	}
-}
+// STYLES OF THE GENERAL CONTAINER OF THE FORM
 
 .contact-wrapper {
 	box-shadow: 0 0 20px 0 var(--maincolor);
@@ -64,6 +28,8 @@ main {
 		padding: 1em;
 	}
 }
+
+// STYLES OF THE FORM
 
 .contact-form {
 	background-color: var(--form-theme);
@@ -98,6 +64,50 @@ main {
 	}
 }
 
+// STYLES OF THE CONTAINER THAT INCLUDES THE INFO OF THE AUTHOR
+
+.contact-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-weight: var(--fw-600);
+	gap: 1rem;
+	background: var(--maincolor);
+}
+
+.contact-info--ul {
+	color: var(--form-info-color);
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	list-style: none;
+	padding: 0;
+
+	li {
+		display: flex;
+		gap: 1rem;
+		margin: auto;
+	}
+}
+
+// STYLES OF THE TITLE OF THE PAGE
+
+.contacttitle {
+	text-align: center;
+	width: 100%;
+	font-size: var(--fs-600);
+	margin: 2rem 0;
+	font-weight: var(--fw-600);
+	color: var(--text3-color);
+
+	span {
+		color: var(--maincolor);
+	}
+}
+
+// STYLES OF EACH AREA ( IN ORDER TO DECLARE WHICH POSITION USE IN THE GRID )
+
 #nameform {
 	grid-area: name;
 }
@@ -114,6 +124,13 @@ main {
 	grid-area: message;
 }
 
+#button {
+	grid-area: button;
+}
+
+
+// STYLES OF EACH INPUT
+
 .contact-form form input,
 .contact-form form textarea {
 	width: 100%;
@@ -125,9 +142,7 @@ main {
 	border-bottom: 1px solid var(--maincolor);
 }
 
-#button {
-	grid-area: button;
-}
+// STYLES FOR THE BUTTON OF THE FORM
 
 .submit-form {
 	width: 100%;
