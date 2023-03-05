@@ -1,4 +1,3 @@
-
 .home-scilinder {
 	background-color: var(--maincolor);
 	opacity: 100%;
@@ -21,6 +20,7 @@
 	grid-template-columns: 1fr 1.4fr;
 	font-weight: var(--fw-800);
 }
+
 .text-theme {
 	position: absolute;
 	top: 2.5rem;
@@ -29,6 +29,7 @@
 	right: -1.3rem;
 	font-size: var(--fs-300);
 }
+
 .home-bcilinder {
 	text-align: left;
 	position: relative;
@@ -37,22 +38,26 @@
 	border-radius: 500px;
 	right: 30vw;
 }
+
 .home--content {
 	height: 100%;
 	display: flex;
 	align-items: center;
+
 	h1 {
 		font-size: var(--fs-600);
 		color: var(--text2-color);
 		width: 75%;
 	}
 }
+
 .home-description {
 	font-size: var(--fs-300);
 	color: var(--text-color);
 }
+
 .home-here-button {
-	padding:1rem 5rem;
+	padding: 1rem 5rem;
 	color: black !important;
 	background-color: white;
 	text-transform: uppercase;
@@ -62,6 +67,7 @@
 	border: 0;
 	cursor: pointer;
 	transition: all 400ms;
+
 	&:hover {
 		background-color: black;
 		color: white !important;
@@ -76,49 +82,54 @@
 	.home-bcilinder {
 		height: 35rem;
 	}
+
 	.home-scilinder {
 		height: 31rem;
 		right: 1.9vw;
 	}
+
 	.home-here-button {
-		padding:1.1rem 10rem;
+		padding: 1.1rem 10rem;
 		border-radius: .6rem;
 	}
 
-	
-	
+
+
 }
 
 
 @media (min-width: 2000px) {
-	:root{
-		--fs-600:4.5rem;
-		--fs-300:2rem;
+	:root {
+		--fs-600: 4.5rem;
+		--fs-300: 2rem;
 	}
-	
+
 	.home-bcilinder {
 		height: 48rem;
 		// top: 10vh;
 	}
+
 	.home-scilinder {
 		height: 44rem;
 		right: 1.7vw;
 	}
+
 	.home-here-button {
 		position: relative;
-		bottom:.6rem;
-		padding:1.5rem 11rem;
+		bottom: .6rem;
+		padding: 1.5rem 11rem;
 		border-radius: .7rem;
 	}
 
-	footer{
+	footer {
 		position: absolute;
 		bottom: 1rem;
-		
+
 	}
-	
+
 
 }
+
 @media (max-width: 950px) {
 
 	.home-bcilinder {
@@ -127,27 +138,32 @@
 		right: 33vw;
 	}
 
-	
+
 	.home-scilinder {
 		right: 4vw;
 	}
 }
+
 @media (max-width: 675px) {
 
 	.home-bcilinder {
 		background: transparent;
 	}
+
 	.home-scilinder {
 		background-color: transparent;
 	}
+
 	.home-description {
 		color: var(--text3-color);
 	}
+
 	.home--content {
 		h1 {
 			color: var(--text3-color);
 		}
 	}
+
 	.home-here-button {
 		border-radius: 4px;
 		padding: .7rem 4rem;
@@ -157,14 +173,17 @@
 		color: var(--seccolor);
 		text-shadow: -3px -3px var(--maincolor);
 	}
+
 	.key-bracket {
 		color: var(--text-color);
 	}
+
 	.rectangles-decoration {
 		position: relative;
 		bottom: 37rem;
 		z-index: -5;
 	}
+
 	.rectangle {
 		position: absolute;
 		width: 160px;
@@ -175,23 +194,27 @@
 		opacity: 40%;
 		overflow-x: hidden;
 	}
+
 	.rectangle1 {
 		top: 10rem;
 		right: -5rem;
 		background-color: var(--maincolor);
 	}
+
 	.rectangle2 {
 		top: 14rem;
 		right: 3rem;
 		background-color: var(--seccolor);
 		z-index: -5;
 	}
+
 	.rectangle3 {
 		top: 21rem;
 		right: -0.5rem;
 		background-color: var(--maincolor);
 	}
 }
+
 @media (max-width: 560px) {
 
 
@@ -199,27 +222,33 @@
 		grid-template-columns: 1fr 1.9fr;
 		right: -9vw;
 	}
+
 	.home--content {
 		width: 100%;
 	}
+
 	.home-description {
 		margin-top: .5rem;
 	}
+
 	.home-here-button {
 		margin-top: .6rem;
 		padding: .4rem 3rem;
 		font-size: var(--fs-300);
-		
+
 	}
+
 	.letter-p {
 		text-shadow: -2px -2px var(--maincolor);
 	}
 
 }
+
 @media (max-width: 320px) {
 	.home--content {
 		width: 70vw;
 	}
+
 	.home-here-button {
 		width: 100px;
 		height: 30px;

@@ -1,18 +1,20 @@
-body{
-    width:100%;
-    overflow-x:hidden;
-    overflow-y:hidden;
+body {
+	width: 100%;
+	overflow-x: hidden;
+	overflow-y: hidden;
 }
 
 main {
 	padding: 0 4em;
 }
+
 .container {
 	max-width: 1170px;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 1.5em;
 }
+
 .contact-info {
 	display: flex;
 	flex-direction: column;
@@ -22,6 +24,7 @@ main {
 	gap: 1rem;
 	background: var(--maincolor);
 }
+
 .contact-info--ul {
 	color: var(--form-info-color);
 	display: flex;
@@ -29,12 +32,14 @@ main {
 	gap: 2rem;
 	list-style: none;
 	padding: 0;
+
 	li {
 		display: flex;
 		gap: 1rem;
 		margin: auto;
 	}
 }
+
 .contacttitle {
 	text-align: center;
 	width: 100%;
@@ -42,40 +47,47 @@ main {
 	margin: 2rem 0;
 	font-weight: var(--fw-600);
 	color: var(--text3-color);
+
 	span {
 		color: var(--maincolor);
 	}
 }
+
 .contact-wrapper {
 	box-shadow: 0 0 20px 0 var(--maincolor);
 	font-size: var(--fs-300);
 	color: var(--text3-color);
 	transition: all 300ms;
 	box-shadow: none;
-	& > * {
+
+	&>* {
 		padding: 1em;
 	}
 }
+
 .contact-form {
 	background-color: var(--form-theme);
+
 	form {
 		display: grid;
 		grid-template-rows: 1fr 1fr 1.5fr 1fr;
 		grid-template-columns: 1fr 1fr;
 		grid-gap: 5px;
 		grid-template-areas: "name phone"
-    "email email"
-    "message message"
-    "button button";
+			"email email"
+			"message message"
+			"button button";
 
 		label {
 			display: block;
 			transition: all 200ms;
 		}
+
 		p {
 			margin: 0;
 			padding: 1em;
 		}
+
 		input {
 			&:focus {
 				label {
@@ -85,18 +97,23 @@ main {
 		}
 	}
 }
+
 #nameform {
 	grid-area: name;
 }
+
 #phone {
 	grid-area: phone;
 }
+
 #email {
 	grid-area: email;
 }
+
 #message {
 	grid-area: message;
 }
+
 .contact-form form input,
 .contact-form form textarea {
 	width: 100%;
@@ -107,9 +124,11 @@ main {
 	color: var(--text3-color);
 	border-bottom: 1px solid var(--maincolor);
 }
+
 #button {
 	grid-area: button;
 }
+
 .submit-form {
 	width: 100%;
 	background: var(--maincolor);
@@ -123,9 +142,11 @@ main {
 	display: inline-block;
 	transition: all 400ms;
 	font-weight: var(--fw-600);
+
 	&:hover {
 		letter-spacing: 8px;
 		transition: all 400ms;
+
 		&::after {
 			left: 0;
 			right: 0;
@@ -135,6 +156,7 @@ main {
 			transition: all 0.35s;
 		}
 	}
+
 	&::after {
 		content: "";
 		background: var(--form-button-hover);
@@ -150,51 +172,52 @@ main {
 	}
 }
 
-@media(min-width:2000px){
-	:root{
-		--fs-300:2rem;
+@media(min-width:2000px) {
+	:root {
+		--fs-300: 2rem;
 
 	}
-	
+
 }
 
 @media(min-width: 700px) {
 
 
-    .contact-wrapper {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-    }
+	.contact-wrapper {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+	}
 
-    .contact-info h4,
-    .contact-info ul,
-    .contact-info p {
-        text-align: left;
-    }
+	.contact-info h4,
+	.contact-info ul,
+	.contact-info p {
+		text-align: left;
+	}
 }
 
 
-@media(max-width: 700px){
+@media(max-width: 700px) {
 
-    main{
-        padding: 0 2em;
-    }
-    
-    .contact-wrapper{
-        box-shadow: none;
-    }
-    
-    .contact-form{
-        background-color: var(--form-theme);
-    }
-    .contact-form form {
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-        "name "
-        "phone "
-        "email "
-        "message "
-        "button ";
-    }
+	main {
+		padding: 0 2em;
+	}
+
+	.contact-wrapper {
+		box-shadow: none;
+	}
+
+	.contact-form {
+		background-color: var(--form-theme);
+	}
+
+	.contact-form form {
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			"name "
+			"phone "
+			"email "
+			"message "
+			"button ";
+	}
 }

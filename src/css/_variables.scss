@@ -1,8 +1,8 @@
 :root {
 
-	
+
 	// DARK THEME VARIABLES
-	--dark-maincolor: #71E6E7 ; 
+	--dark-maincolor: #71E6E7;
 	--dark-text-color: #747072;
 	--dark-2text-color: rgb(0, 0, 0);
 	--dark-3text-color: #ffff;
@@ -12,20 +12,20 @@
 	--dark-neutralcolor-2: #609C9C;
 
 	--dark-gradient-h1: radial-gradient(circle at left, var(--maincolor), var(--theme));
-	--dark-career-bg: linear-gradient(to top, var(--seccolor-2),var(--seccolor-2), var(--theme));
-	--dark-description-bg: linear-gradient(to bottom, var(--neutralcolor-2),var(--neutralcolor-2), var(--theme));
+	--dark-career-bg: linear-gradient(to top, var(--seccolor-2), var(--seccolor-2), var(--theme));
+	--dark-description-bg: linear-gradient(to bottom, var(--neutralcolor-2), var(--neutralcolor-2), var(--theme));
 	--dark-gradient-h1skills: radial-gradient(circle at right, var(--maincolor), var(--theme));
 
-	--dark-form-button-hover: rgb(245, 245, 245); 
+	--dark-form-button-hover: rgb(245, 245, 245);
 	--dark-form-info-color: black;
 	--dark-form-theme-color: #292728;
 
-	--dark-bg-color-scrollbar: #444143; 
+	--dark-bg-color-scrollbar: #444143;
 
-	
+
 	--dark-theme: #333032;
-	
-    // LIGHT THEME VARIABLES
+
+	// LIGHT THEME VARIABLES
 	--light-maincolor: #008EFF;
 	--light-text-color: #050A30;
 	--light-2text-color: #050A30;
@@ -37,16 +37,16 @@
 
 	--light-gradient-h1: none;
 
-	--light-form-button-hover: black; 
-	--light-form-info-color: white; 
+	--light-form-button-hover: black;
+	--light-form-info-color: white;
 	--light-form-theme-color: rgb(231, 229, 230);
 
-	--light-bg-color-scrollbar: #cfc9cd; 
+	--light-bg-color-scrollbar: #cfc9cd;
 
 
 	--light-theme: #f1f1f3;
-	
-    // MAIN VARIABLES
+
+	// MAIN VARIABLES
 	--maincolor: var(--dark-maincolor);
 	--text-color: var(--dark-text-color);
 	--text2-color: var(--dark-2text-color);
@@ -57,15 +57,15 @@
 	--neutralcolor-2: var(--dark-neutralcolor-2);
 
 	--gradient-h1: var(--dark-gradient-h1);
-	--career-bg:var(--dark-career-bg);
-	--description-bg:var(--dark-description-bg);
+	--career-bg: var(--dark-career-bg);
+	--description-bg: var(--dark-description-bg);
 	--gradient-h1skills: var(--dark-gradient-h1skills);
 
-	--form-button-hover: var(--dark-form-button-hover); 
-	--form-info-color: var(--dark-form-info-color); 
+	--form-button-hover: var(--dark-form-button-hover);
+	--form-info-color: var(--dark-form-info-color);
 	--form-theme: var(--dark-form-theme-color);
 
-	--bg-color-scrollbar: var(--dark-bg-color-scrollbar); 
+	--bg-color-scrollbar: var(--dark-bg-color-scrollbar);
 
 	--display-picture-light: none;
 	--display-picture-dark: block;
@@ -81,7 +81,7 @@
 	--fw-400: 500;
 	--fw-600: 600;
 	--fw-800: 600;
-	
+
 	--animation-bar-delay: .5s;
 	--amount-filled: 80%;
 }
