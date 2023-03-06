@@ -135,18 +135,6 @@ img {
 }
 
 
-@media (min-width: 2000px) {
-	::-webkit-scrollbar {
-		width: 20px;
-	}
-
-	:root {
-		--fs-300: 2.8rem;
-		--fs-400: 3.2rem;
-		--fs-600: 4.2rem;
-		--fs-800: 6.7rem;
-	}
-}
 
 
 @media (min-width: 1440px) {
@@ -155,6 +143,20 @@ img {
 		--fs-400: 2.5rem;
 		--fs-600: 3.2rem;
 		--fs-800: 5.7rem;
+	}
+}
+
+
+@media (min-width: 2000px) {
+	::-webkit-scrollbar {
+		width: 20px;
+	}
+
+	:root {
+		--fs-300: 2.3rem;
+		--fs-400: 3.2rem;
+		--fs-600: 4.2rem;
+		--fs-800: 8.7rem;
 	}
 }
 
