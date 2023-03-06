@@ -384,7 +384,7 @@ STYLES OF SKILLS SECTION
 
 .fillcont2 {
 	--animation-bar-delay: 0.8s;
-	--amount-filled: 86%;
+	--amount-filled: 89%;
 	background-color: #2c96c4;
 	animation: rellenar 1.5s forwards var(--animation-bar-delay);
 	animation-play-state: paused;
@@ -392,7 +392,7 @@ STYLES OF SKILLS SECTION
 
 .fillcont3 {
 	--animation-bar-delay: 1.2s;
-	--amount-filled: 79%;
+	--amount-filled: 75%;
 	background-color: #cab301;
 	animation: rellenar 1.5s forwards var(--animation-bar-delay);
 	animation-play-state: paused;
@@ -400,7 +400,7 @@ STYLES OF SKILLS SECTION
 
 .fillcont4 {
 	--animation-bar-delay: 1.5s;
-	--amount-filled: 92%;
+	--amount-filled: 82%;
 	background-color: #747ca0;
 	animation: rellenar 1.5s forwards var(--animation-bar-delay);
 	animation-play-state: paused;
@@ -701,7 +701,7 @@ STYLES OF THE CAROUSEL
 	}
 
 	.container-mine {
-		height: 45rem;
+		height: 59rem;
 	}
 }
 
@@ -713,7 +713,7 @@ STYLES OF THE CAROUSEL
 	}
 
 	.career {
-		height: 44rem;
+		height: 35rem;
 	}
 
 	footer {
