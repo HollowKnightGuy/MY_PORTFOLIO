@@ -178,6 +178,8 @@ STYLES OF SECTION ABOUT ME
 	}
 }
 
+
+
 // STYLES OF EACH STAGE OF TRAYECTORY
 .stage {
 	display: flex;
@@ -185,13 +187,18 @@ STYLES OF SECTION ABOUT ME
 	align-items: center;
 	text-align: center;
 	gap: 1rem;
-	width: 70%;
+	width: 100%;
 	font-size: var(--fs-300);
 }
 
+
 .stage--left {
-	margin-left: 4.6rem;
 	flex-direction: row-reverse;
+}
+
+.stage-description{
+	width: 50%;
+	padding-left: 1%;
 }
 
 // STYLES OF DESCRIPTION OF ABOUT ME
