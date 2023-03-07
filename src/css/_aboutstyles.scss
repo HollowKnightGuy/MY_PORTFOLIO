@@ -228,7 +228,7 @@ STYLES OF SECTION ABOUT ME RESPONSIVE
 .about-responsive {
 	position: relative;
 	font-size: var(--fs-300);
-	color: var(--text3-color);
+	color: white;
 	font-weight: var(--fw-600);
 	width: 80vw;
 	margin: 3rem auto 1rem auto;
@@ -630,6 +630,49 @@ STYLES OF THE CAROUSEL
 	}
 }
 
+
+.cards-projects{
+	position: relative;
+	width: 100vw;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.card{
+	background-color: var(--bg-color-scrollbar);
+	border: 0;
+	color: var(--text3-color);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	margin: 2rem;
+}
+
+.card{
+	padding: 1rem;
+}
+
+
+.card-title{
+	font-size: var(--fs-400);
+}
+
+.card-text, .btn-primary{
+	font-size: var(--fs-300);
+}
+
+.btn-primary{
+	background-color: var(--maincolor);
+	border: 0;
+	color: var(--form-info-color) !important;
+	&:hover{
+		border: 0;
+		background-color: var(--neutralcolor);
+	}
+}
+
+
+
+
 @media (min-width: 1200px) {
 	:root {
 		--fs-400: 2.3rem;
@@ -710,6 +753,17 @@ STYLES OF THE CAROUSEL
 	.container-mine {
 		height: 59rem;
 	}
+
+	.card{
+		width: 35rem;
+		padding: 2rem;
+		border-radius: 1.2rem;
+	}
+
+	.btn-primary{
+		padding: 1.5rem;
+		border-radius: 1rem;
+	}
 }
 
 @media (max-width: 2000px) {
@@ -725,6 +779,11 @@ STYLES OF THE CAROUSEL
 
 	footer {
 		top: 3rem;
+	}
+
+	.card{
+		width: 27rem;
+		border-radius: .9rem;
 	}
 }
 
