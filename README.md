@@ -6,3 +6,5 @@ To run the project run the next commands:
  - npm run des
 
 Then copy the localhost url and paste it on the navigator
+
+Hosting: https://pablomyportfolio.000webhostapp.com/
